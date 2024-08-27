@@ -4,3 +4,9 @@
 
 To run anything in that interface, use
 `sudo ip netns exec ns1 <YOUR COMMAND>`
+
+## puppeteer
+```sh
+pnpm i # install dependencies
+pnpm run dev # run puppy.js script
+```

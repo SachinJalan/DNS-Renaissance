@@ -1,0 +1,7 @@
+selenium
+webdriver_manager
+asyncio
+pytest
+trio
+pytest-trio
+flake8
