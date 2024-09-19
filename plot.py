@@ -16,7 +16,18 @@ Domain,Total Packets,Total Bytes,Total DNS Packets,Total DNS Bytes,Total Time,To
 """
 
 # %%
-df = pd.read_csv("results.csv")
+# df = pd.read_csv("results.csv")
+df = pd.read_csv("data/results-200.csv")
+df.head()
+
+
+# %%
+# clean up the data
+# if total packets is 0 then remove the row
+df = df[df["Total Packets"] != 0]
+# if ttfb is 0 or -1 then remove the row
+df = df[df["TTFB"] != 0]
+df = df[df["TTFB"] != -1]
 df.head()
 
 
@@ -31,4 +42,44 @@ plt.show()
 # total bytes vs total dns bytes
 
 sns.scatterplot(data=df, x="Total Bytes", y="Total DNS Bytes")
+plt.show()
+
+
+# %%
+# total time vs total dns time
+
+sns.scatterplot(data=df, x="Total Time", y="Total DNS Time")
+plt.show()
+
+
+# %%
+# total time vs total dns time ratio
+df["Total DNS Time Ratio"] = df["Total DNS Time"] / df["Total Time"]
+sns.histplot(data=df, x="Total DNS Time Ratio")
+plt.show()
+
+
+# %%
+# df headers: ['Domain', 'Total Packets', 'Total Bytes', 'Total DNS Packets',
+# 'Total DNS Bytes', 'Total Time', 'Total DNS Time', 'TTFB',
+# 'Total DNS Cycles-core', 'Total DNS Cycles-atom',
+# 'Total DNS Energy-pkg', 'Total DNS Energy-psys', 'Visited Domains',
+# 'Total DNS Time Ratio']
+
+# %%
+# number of visited domains vs total dns time ratio
+df["Number of Visited Domains"] = df["Visited Domains"].apply(
+    lambda x: len(x.split(","))
+)
+sns.scatterplot(data=df, x="Number of Visited Domains", y="Total DNS Time Ratio")
+plt.show()
+
+# %%
+# number of visited domains vs total dns time
+sns.scatterplot(data=df, x="Number of Visited Domains", y="Total DNS Time")
+plt.show()
+
+# %%
+# number of visited domains histogram
+sns.histplot(data=df, x="Number of Visited Domains")
 plt.show()

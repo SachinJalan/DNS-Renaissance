@@ -1,0 +1,205 @@
+Domain,Total Packets,Total Bytes,Total DNS Packets,Total DNS Bytes,Total Time,Total DNS Time,TTFB,Total DNS Cycles-core,Total DNS Cycles-atom,Total DNS Energy-pkg,Total DNS Energy-psys,Visited Domains
+iitgn.ac.in,2456,11577920,76,9414,67814.94188,2493.945122,583.4434032,177504750,177504750,9.35,22.44,"[""'iitgn.ac.in.'"", ""'www.googletagmanager.com.'"", ""'cdnjs.cloudflare.com.'"", ""'fonts.googleapis.com.'"", ""'cdn.usefathom.com.'"", ""'d1m1uiy1540nk9.cloudfront.net.'"", ""'www.facebook.com.'"", ""'px.ads.linkedin.com.'"", ""'fonts.gstatic.com.'""]"
+2mdn.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+3gppnetwork.org,0,0,0,0,0,0,-1,-1,0,0,0,[]
+3lift.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+a-msedge.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+a2z.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+aaplimg.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+adform.net,7,943,2,524,6.367206573,0.2918243408,-1,19384990,19384990,111.12,251.41,"[""'adform.net.'""]"
+adnxs.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+adobe.com,53,13346,10,1864,3379.168749,401.4282227,500.6525517,40702420,40702420,1.92,4.32,"[""'adobe.com.'"", ""'www.adobe.com.'""]"
+adobe.io,13,1141,2,376,782.2246552,0.1366138458,186.8646145,21184300,21184300,0.36,0.69,"[""'adobe.io.'""]"
+adsafeprotected.com,7,1062,2,634,6.349563599,0.993013382,-1,20318988,20318988,0.45,0.9,"[""'adsafeprotected.com.'""]"
+adsrvr.org,563,1149401,58,10926,15701.66969,755.8429241,697.583437,58389574,58389574,3.87,8.99,"[""'adsrvr.org.'"", ""'www.thetradedesk.com.'"", ""'thetradedesk.com.'""]"
+akadns.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+akamai.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+akamaiedge.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+akamaihd.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+akamaized.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+alicdn.com,7,687,2,268,9.056329727,0.167131424,-1,19088759,19088759,41.71,115.36,"[""'alicdn.com.'""]"
+aliyuncs.com,7,633,2,212,6.914138794,0.1358985901,-1,21512171,21512171,1.22,2.75,"[""'aliyuncs.com.'""]"
+allawnos.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+amazon-adsystem.com,9,916,2,404,4854.173422,0.218629837,-1,19571498,19571498,55.18,160.74,"[""'amazon-adsystem.com.'""]"
+amazon.com,52,16991,10,1497,1213.36937,58.8786602,434.0844154,36529614,36529614,0.92,1.73,"[""'amazon.com.'"", ""'www.amazon.com.'""]"
+amazon.dev,0,0,0,0,0,0,-1,-1,0,0,0,[]
+amazonalexa.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+amazonaws.com,4830,28912248,82,19434,47926.38874,1154.761076,888.8802528,151531065,151531065,159.97,453.03,"[""'amazonaws.com.'"", ""'aws.amazon.com.'"", ""'a0.awsstatic.com.'"", ""'d2c.aws.amazon.com.'"", ""'prod.pa.cdn.uis.awsstatic.com.'"", ""'d1.awsstatic.com.'"", ""'img.youtube.com.'"", ""'loader.us-east-1.prod.mrc-sunrise.marketing.aws.dev.'""]"
+ampproject.org,569,1718763,22,2294,8165.529966,515.8474445,496.4401722,77768718,77768718,2.5,5.22,"[""'ampproject.org.'"", ""'www.ampproject.org.'"", ""'amp.dev.'"", ""'cdn.ampproject.org.'""]"
+android.com,3953,14600896,66,8727,41398.51403,1109.409094,72.04771042,118233335,118233335,42.27,118.9,"[""'android.com.'"", ""'www.android.com.'"", ""'www.googletagmanager.com.'"", ""'www.gstatic.com.'"", ""'lh3.googleusercontent.com.'"", ""'kstatic.googleusercontent.com.'""]"
+app-analytics-services.com,9,865,2,322,74.50413704,66.87998772,-1,18860676,18860676,1.14,2.82,"[""'app-analytics-services.com.'""]"
+app-measurement.com,7,715,2,287,8.132219315,0.08201599121,-1,22499237,22499237,1.82,4.41,"[""'app-measurement.com.'""]"
+appcenter.ms,1623,5806141,30,5621,37234.24459,1140.051603,414.2735004,80226418,80226418,4.3,10.6,"[""'appcenter.ms.'"", ""'assets.onestore.ms.'"", ""'c.s-microsoft.com.'"", ""'www.microsoft.com.'""]"
+apple-dns.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+apple.com,15045,110344366,18,3547,190272.3892,513.0290985,32.4010849,59675249,59675249,19.53,59.32,"[""'apple.com.'"", ""'www.apple.com.'"", ""'is1-ssl.mzstatic.com.'""]"
+applovin.com,4212,38548985,74,10076,26498.06547,617.9730892,117.4454689,116331071,116331071,110.84,342.28,"[""'applovin.com.'"", ""'www.applovin.com.'"", ""'cdn.fonts.net.'"", ""'cdnjs.cloudflare.com.'"", ""'ajax.googleapis.com.'"", ""'fonts.googleapis.com.'""]"
+appsflyer.com,162,242512,22,2974,1959.800959,183.5441589,434.6029758,79253583,79253583,3.45,8.1,"[""'appsflyer.com.'"", ""'www.appsflyer.com.'"", ""'cdn.cookielaw.org.'"", ""'www.googletagmanager.com.'""]"
+appsflyersdk.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+atomile.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+avast.com,1973,5525295,70,11430,55254.77457,1546.640396,1900.862455,156179602,156179602,120.44,323.04,"[""'avast.com.'"", ""'www.avast.com.'"", ""'cdn.cookielaw.org.'"", ""'static3.avast.com.'"", ""'assets.adobedtm.com.'"", ""'www.googletagmanager.com.'"", ""'static.avast.com.'"", ""'4711400.fls.doubleclick.net.'""]"
+avcdn.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+azure.com,8188,57022106,182,41224,103267.904,4002.076149,0,170798112,170798112,132.09,319.43,"[""'azure.com.'"", ""'azure.microsoft.com.'"", ""'play.vidyard.com.'"", ""'www.microsoft.com.'"", ""'img-prod-cms-rt-microsoft-com.akamaized.net.'"", ""'cdn-dynmedia-1.microsoft.com.'"", ""'wcpstatic.microsoft.com.'"", ""'cdn.botframework.com.'"", ""'c.s-microsoft.com.'""]"
+azureedge.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+baidu.com,30,2682,2,262,10899.20688,436.4500046,0,19730418,19730418,0.97,1.99,"[""'baidu.com.'""]"
+bidswitch.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+bing.com,178,325733,16,4606,3217.171431,258.9702606,34.13295746,40193641,40193641,1.52,2.86,"[""'bing.com.'"", ""'www.bing.com.'""]"
+branch.io,1410,4490695,74,11952,26005.70846,1066.356897,311.391592,158894332,158894332,8.67,17.65,"[""'branch.io.'"", ""'www.branch.io.'"", ""'fonts.googleapis.com.'"", ""'play.vidyard.com.'"", ""'www2.branch.io.'"", ""'rum-static.pingdom.net.'"", ""'www.googletagmanager.com.'"", ""'fonts.gstatic.com.'""]"
+bytefcdn-oversea.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+bytefcdn-ttpeu.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+byteoversea.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+byteoversea.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+capcutapi.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+capture2,0,0,0,0,0,0,-1,-1,0,0,0,[]
+captureiitgn,761,5827579,12,1754,35850.31343,67.71183014,626.1303425,57596548,57596548,3.24,5.48,"[""'iitgn.ac.in.'"", ""'www.facebook.com.'"", ""'px.ads.linkedin.com.'""]"
+casalemedia.com,7,722,2,298,7.139444351,0.06914138794,-1,18963459,18963459,32.51,76.39,"[""'casalemedia.com.'""]"
+cdn-apple.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+cdn77.org,0,0,0,0,0,0,-1,-1,0,0,0,[]
+cdninstagram.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+clarity.ms,7,687,2,268,7.128238678,0.1094341278,-1,20025829,20025829,0.38,0.66,"[""'clarity.ms.'""]"
+cloudflare-dns.com,66,11030,10,1506,37415.82465,58.45999718,130.0661564,37798720,37798720,18.21,39.19,"[""'cloudflare-dns.com.'"", ""'one.one.one.one.'""]"
+cloudflare.com,1091,5246492,46,7220,6577.679396,891.6289806,178.9801121,95893766,95893766,5.29,9.39,"[""'cloudflare.com.'"", ""'www.cloudflare.com.'"", ""'ot.www.cloudflare.com.'"", ""'performance.radar.cloudflare.com.'"", ""'cf-assets.www.cloudflare.com.'""]"
+cloudflare.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+cloudfront.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+crashlytics.com,14915,86348342,414,45905,132074.6436,2111.84454,476.6464233,98182377,98182377,23.28,51.58,"[""'crashlytics.com.'"", ""'firebase.google.com.'"", ""'fonts.googleapis.com.'"", ""'www.gstatic.com.'"", ""'fonts.gstatic.com.'""]"
+creativecdn.com,7,648,2,224,6.381511688,0.09322166443,-1,19338777,19338777,1.46,3.02,"[""'creativecdn.com.'""]"
+criteo.com,2259,10093059,102,16692,39733.76822,1948.495388,37.00733185,177868168,177868168,187.5,429.71,"[""'criteo.com.'"", ""'www.criteo.com.'"", ""'www.googletagmanager.com.'"", ""'www2.criteo.com.'"", ""'tree-nation.com.'"", ""'cdnjs.cloudflare.com.'"", ""'cdn.jsdelivr.net.'"", ""'code.jquery.com.'"", ""'storage.pardot.com.'""]"
+criteo.net,28,5892,6,624,768.8245773,134.7663403,253.2060146,19300664,19300664,1.06,1.97,"[""'criteo.net.'""]"
+demdex.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+digicert.com,2456,10777228,50,8476,74778.88942,6370.148897,544.1689491,97201531,97201531,2.85,5.68,"[""'digicert.com.'"", ""'www.digicert.com.'"", ""'assets.adobedtm.com.'"", ""'static.ada.support.'"", ""'c.la3-c1-ia5.salesforceliveagent.com.'""]"
+dns.google,9,847,2,344,2714.873314,0.2727508545,-1,22272449,22272449,49.15,115.68,"[""'dns.google.'""]"
+domain,0,0,0,0,0,0,-1,-1,0,0,0,[]
+dotomi.com,631,2118481,42,6588,10008.59237,1096.325397,605.8247089,96859740,96859740,70.29,164.36,"[""'dotomi.com.'"", ""'www.epsilon.com.'"", ""'cdn.cookielaw.org.'"", ""'static.hsappstatic.net.'"", ""'www.google.com.'""]"
+doubleclick.net,1664,3408430,70,8517,21411.20529,944.4315434,464.5330906,177230917,177230917,87.79,207.52,"[""'doubleclick.net.'"", ""'marketingplatform.google.com.'"", ""'www.gstatic.com.'"", ""'fonts.googleapis.com.'"", ""'www.googletagmanager.com.'"", ""'lh3.googleusercontent.com.'"", ""'ajax.googleapis.com.'"", ""'fonts.gstatic.com.'"", ""'www.googleadservices.com.'""]"
+doubleverify.com,2008,9329749,46,5266,87036.46517,224.6894836,74.1147995,100921671,100921671,4.85,9.83,"[""'doubleverify.com.'"", ""'consent.trustarc.com.'"", ""'www.googletagmanager.com.'"", ""'stats.wp.com.'"", ""'secure.gravatar.com.'""]"
+douyincdn.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+dropbox.com,13319,76687424,54,8856,422709.3854,1874.914169,404.8423767,96420943,96420943,191.5,464.32,"[""'dropbox.com.'"", ""'www.dropbox.com.'"", ""'cfl.dropboxstatic.com.'"", ""'fjord.dropboxstatic.com.'"", ""'aem.dropbox.com.'""]"
+edgekey.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+epicgames.com,14,2119,6,1178,704.3886185,161.1101627,542.9906845,39824351,39824351,32.06,78.94,"[""'epicgames.com.'"", ""'www.epicgames.com.'""]"
+example.com,7,667,2,247,18.85795593,1.603364944,-1,19376118,19376118,1.35,2.87,"[""'example.com.'""]"
+facebook.com,66,13990,10,1219,536.7376804,94.77925301,31.73398972,39238985,39238985,1.42,2.69,"[""'facebook.com.'"", ""'www.facebook.com.'""]"
+facebook.net,2,108,0,0,0.04315376282,0,-1,-1,0,0,0,[]
+fastly.net,2571,20414976,34,6706,60915.04192,471.1959362,310.6927872,76943683,76943683,23.64,60.69,"[""'fastly.net.'"", ""'www.fastly.com.'"", ""'www.googletagmanager.com.'"", ""'images.ctfassets.net.'""]"
+fbcdn.net,68,19822,10,1183,702.8050423,68.3221817,39.696455,39067802,39067802,2.21,5.29,"[""'fbcdn.net.'"", ""'www.facebook.com.'""]"
+firetvcaptiveportal.com,7,1358,2,926,8.288860321,2.856969833,-1,19451156,19451156,2.02,3.8,"[""'firetvcaptiveportal.com.'""]"
+gamepass.com,4301,16623167,146,29826,125305.83,3784.169674,468.1408405,225895050,225895050,189.06,521.96,"[""'gamepass.com.'"", ""'www.xbox.com.'"", ""'cdnjs.cloudflare.com.'"", ""'www.microsoft.com.'"", ""'assets-www.xbox.com.'"", ""'assets.adobedtm.com.'"", ""'img-prod-cms-rt-microsoft-com.akamaized.net.'"", ""'mwf-service.akamaized.net.'"", ""'c.s-microsoft.com.'"", ""'assets.xboxservices.com.'"", ""'wcpstatic.microsoft.com.'"", ""'mem.gfx.ms.'""]"
+ggpht.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+gmail.com,397,624689,26,2795,5792.419434,296.7731953,75.59108734,94229607,94229607,68.8,190.23,"[""'gmail.com.'"", ""'mail.google.com.'"", ""'accounts.google.com.'"", ""'fonts.gstatic.com.'"", ""'ssl.gstatic.com.'""]"
+go-mpulse.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+google-analytics.com,1482,3965302,80,9798,16974.22385,1411.21769,148.3376026,188860893,188860893,102.46,282.3,"[""'google-analytics.com.'"", ""'www.google.com.'"", ""'marketingplatform.google.com.'"", ""'www.gstatic.com.'"", ""'fonts.googleapis.com.'"", ""'www.googletagmanager.com.'"", ""'lh3.googleusercontent.com.'"", ""'ajax.googleapis.com.'"", ""'fonts.gstatic.com.'"", ""'www.googleadservices.com.'""]"
+google.com.br,66,60496,10,1119,1428.695917,140.319109,417.6948071,39297873,39297873,1.81,4.33,"[""'google.com.br.'"", ""'www.google.com.br.'""]"
+google.com,60,48315,10,1062,932.5749874,27.99987793,140.879631,40504068,40504068,0.88,1.64,"[""'google.com.'"", ""'www.google.com.'""]"
+googleadservices.com,7,673,2,244,5.897045135,0.2846717834,-1,20343165,20343165,1.45,3.66,"[""'googleadservices.com.'""]"
+googleapis.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+googlesyndication.com,66,41216,10,1117,1294.146061,28.62977982,150.8193016,37922553,37922553,18.11,49.21,"[""'googlesyndication.com.'"", ""'www.google.com.'""]"
+googletagmanager.com,7,721,2,292,6.582975388,1.219034195,-1,19440297,19440297,0.59,1.24,"[""'googletagmanager.com.'""]"
+googletagservices.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+googleusercontent.com,7,727,2,297,7.833957672,1.599311829,-1,19221020,19221020,1.51,3.93,"[""'googleusercontent.com.'""]"
+googlevideo.com,84,48234,18,2139,2869.677782,526.02458,34.93857384,61259077,61259077,19.23,52.06,"[""'googlevideo.com.'"", ""'video.google.com.'"", ""'www.google.com.'""]"
+gstatic.com,22,2619,10,1081,63.07172775,24.4204998,34.04188156,34206599,34206599,19.09,50.99,"[""'gstatic.com.'"", ""'www.gstatic.com.'""]"
+gvt1.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+gvt2.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+heytapdl.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+ibyteimg.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+icloud.com,463,3726323,10,1582,2082.029343,432.3840141,35.01534462,42817958,42817958,20.81,52.99,"[""'icloud.com.'"", ""'www.icloud.com.'""]"
+id5-sync.com,70,16127,10,2826,3981.471777,345.6764221,259.3536377,41166754,41166754,3.98,8.87,"[""'id5-sync.com.'"", ""'console.id5.io.'""]"
+inmobi.com,813,2016025,66,8729,21278.39661,1032.844782,0,155983118,155983118,72.14,196.81,"[""'inmobi.com.'"", ""'www.inmobi.com.'"", ""'www.googletagmanager.com.'"", ""'web.inmobicdn.net.'"", ""'www.googleadservices.com.'"", ""'googleads.g.doubleclick.net.'"", ""'www.google.com.'"", ""'www.google.co.in.'""]"
+inner-active.mobi,9,820,2,310,3922.401905,0.2083778381,-1,20294295,20294295,0.52,1.03,"[""'inner-active.mobi.'""]"
+instagram.com,81,19157,14,1843,1541.292906,236.8440628,33.65421295,56892726,56892726,82.74,203.16,"[""'instagram.com.'"", ""'www.instagram.com.'"", ""'www.facebook.com.'""]"
+isnssdk.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+jsdelivr.net,7,633,2,212,7.174968719,0.2064704895,-1,19912013,19912013,0.42,0.78,"[""'jsdelivr.net.'""]"
+kwai.net,7,613,2,196,6.193399429,0.3716945648,-1,19312462,19312462,1,2.14,"[""'kwai.net.'""]"
+launchdarkly.com,9280,40267770,402,87246,239562.9029,5697.478294,196.4738369,160591041,160591041,25.26,60.58,"[""'launchdarkly.com.'"", ""'consent.cookiebot.com.'"", ""'client-registry.mutinycdn.com.'"", ""'www.googletagmanager.com.'"", ""'launchdarkly-marketingsite.cdn.prismic.io.'"", ""'images.prismic.io.'"", ""'bat.bing.com.'"", ""'www.msn.com.'""]"
+lencr.org,884,3029555,50,7190,14120.38922,1124.494553,408.6318016,94336312,94336312,19.78,38.58,"[""'lencr.org.'"", ""'letsencrypt.org.'"", ""'www.googletagmanager.com.'"", ""'outreach.abetterinternet.org.'"", ""'fonts.googleapis.com.'""]"
+liadm.com,2,108,0,0,0.03409385681,0,-1,-1,0,0,0,[]
+lijit.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+linkedin.com,70,231237,6,1141,2596.051455,126.5428066,914.3638611,45289863,45289863,64.71,138.97,"[""'linkedin.com.'"", ""'www.linkedin.com.'""]"
+live.com,52,18611,10,2023,811.8667603,147.0520496,39.92342949,57863660,57863660,2.52,4.54,"[""'live.com.'"", ""'outlook.live.com.'"", ""'www.microsoft.com.'""]"
+media-amazon.com,2,132,0,0,0.04148483276,0,0,-1,0,0,0,[]
+media.net,817,991208,62,8231,40000.26703,2104.311228,432.197094,189961356,189961356,72.2,144.55,"[""'media.net.'"", ""'www.media.net.'"", ""'s31073.pcdn.co.'"", ""'www.googletagmanager.com.'"", ""'www.googleadservices.com.'"", ""'bat.bing.com.'"", ""'www.msn.com.'"", ""'googleads.g.doubleclick.net.'"", ""'www.google.com.'"", ""'www.google.co.in.'""]"
+microsoft.com,28,8713,6,1633,1469.735384,90.07811546,405.1883221,42105999,42105999,1.25,2.27,"[""'microsoft.com.'"", ""'www.microsoft.com.'""]"
+microsoftonline.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+mikrotik.com,1017,3778234,34,6602,21497.13326,483.3278656,713.060379,62685011,62685011,3.65,5.95,"[""'mikrotik.com.'"", ""'i.ytimg.com.'"", ""'i.mt.lv.'""]"
+miui.com,669,1298006,26,6150,28882.13062,1629.890442,36.60726547,82259614,82259614,20.7,46.1,"[""'miui.com.'"", ""'home.miui.com.'"", ""'cia.sec.miui.com.'"", ""'font.sec.miui.com.'""]"
+msedge.net,12,917,2,204,180.0026894,0.1921653748,179.6338558,18545302,18545302,46.58,97.08,"[""'msedge.net.'""]"
+msftconnecttest.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+msftncsi.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+msn.com,615,1571770,22,3776,4094.824314,200.9513378,57.69824982,56971334,56971334,2.34,4.12,"[""'msn.com.'"", ""'www.msn.com.'"", ""'assets.msn.com.'""]"
+mtgglobals.com,5,294,0,0,0.3826618195,0,0,-1,0,0,0,[]
+mzstatic.com,15838,110357792,18,3806,422649.0355,941.3092136,556.4222336,57711970,57711970,49.14,101.45,"[""'mzstatic.com.'"", ""'www.apple.com.'"", ""'is1-ssl.mzstatic.com.'""]"
+netflix.com,594,1831255,10,1876,3221.412659,89.50042725,127.1204948,38772625,38772625,53.79,113.9,"[""'netflix.com.'"", ""'www.netflix.com.'""]"
+nflximg.com,11,820,2,208,2776.026487,0.1165866852,-1,21572742,21572742,0.94,1.71,"[""'nflximg.com.'""]"
+nflxso.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+nist.gov,3311,17944136,178,30656,161504.0102,2094.226837,732.9745293,98203955,98203955,118.48,251.68,"[""'nist.gov.'"", ""'www.nist.gov.'"", ""'www.googletagmanager.com.'"", ""'time.gov.'"", ""'siteimproveanalytics.com.'""]"
+nr-data.net,5,301,0,0,0.205039978,0,-1,-1,0,0,0,[]
+ntp.org,587,773101,54,5936,18882.41053,1295.070887,785.5224609,134328937,134328937,72.36,148.44,"[""'ntp.org.'"", ""'www.googletagmanager.com.'"", ""'fonts.googleapis.com.'"", ""'www.ntp.org.'"", ""'cse.google.com.'"", ""'nwtime.org.'"", ""'fonts.gstatic.com.'""]"
+office.com,3236,25222132,52,11314,36869.39764,1800.540447,26.59249306,96269655,96269655,3.63,7.52,"[""'www.office.com.'"", ""'res.cdn.office.net.'"", ""'www.microsoft.com.'"", ""'img-prod-cms-rt-microsoft-com.akamaized.net.'"", ""'mem.gfx.ms.'""]"
+office.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+office365.com,28,8426,6,1221,748.88587,106.235981,474.1103649,42624365,42624365,49.01,100.12,"[""'office365.com.'"", ""'www.microsoft.com.'""]"
+one.one,535,1632281,18,2479,15082.97849,1380.569458,1313.604593,57273938,57273938,34.2,69.64,"[""'one.one.'"", ""'www.one.com.'"", ""'www-static.cdn-one.com.'""]"
+openx.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+opera.com,3124,10307813,42,8495,56345.38364,1479.542255,294.5156097,97164034,97164034,4.53,8.58,"[""'opera.com.'"", ""'www.opera.com.'"", ""'cdn-production-opera-website.operacdn.com.'"", ""'www.googletagmanager.com.'"", ""'dc.ads.linkedin.com.'""]"
+outbrain.com,3316,10722719,74,12395,45805.16243,8110.237837,139.0631199,117971057,117971057,37.62,80.42,"[""'outbrain.com.'"", ""'www.outbrain.com.'"", ""'use.typekit.net.'"", ""'www.googletagmanager.com.'"", ""'fast.wistia.com.'"", ""'p.typekit.net.'""]"
+outlook.com,104,35079,18,4498,3293.860674,379.1649342,185.3010654,75086254,75086254,3.6,6.85,"[""'outlook.com.'"", ""'www.outlook.com.'"", ""'outlook.live.com.'"", ""'www.microsoft.com.'""]"
+pangle.io,0,0,0,0,0,0,-1,-1,0,0,0,[]
+pki.goog,823,1705166,62,7056,7755.818605,788.1650925,31.91637993,138700253,138700253,44.4,111.26,"[""'pki.goog.'"", ""'fonts.googleapis.com.'"", ""'www.google.com.'"", ""'lh3.googleusercontent.com.'"", ""'www.gstatic.com.'"", ""'www.googletagmanager.com.'"", ""'fonts.gstatic.com.'""]"
+playstation.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+pubmatic.com,2088,7898250,106,16293,39468.82057,1658.490419,390.8789158,197827371,197827371,41.48,108.92,"[""'pubmatic.com.'"", ""'www.googletagmanager.com.'"", ""'analytics.twitter.com.'"", ""'t.co.'"", ""'px.ads.linkedin.com.'"", ""'player.vimeo.com.'"", ""'d3m889aznlr23d.cloudfront.net.'"", ""'oag.ca.gov.'"", ""'i.ytimg.com.'"", ""'i.vimeocdn.com.'""]"
+qlivecdn.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+qq.com,25,2420,2,300,10251.93024,0.1590251923,128.5085678,19137564,19137564,53.33,141.63,"[""'qq.com.'""]"
+quantserve.com,28,6307,6,876,1783.406734,43.99991035,609.6811295,20051418,20051418,0.95,2.18,"[""'quantserve.com.'""]"
+rbxcdn.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+reddit.com,41,9912,10,1716,664.8952961,413.7334824,45.78661919,38338102,38338102,0.97,1.97,"[""'reddit.com.'"", ""'www.reddit.com.'""]"
+ring.com,2559,12435756,114,22224,120715.4279,8126.158237,804.2814732,239389062,239389062,196.92,522.92,"[""'ring.com.'"", ""'d39xvdj9d5ntm1.cloudfront.net.'"", ""'cdn.optimizely.com.'"", ""'services.xg4ken.com.'"", ""'events.xg4ken.com.'"", ""'s.amazon-adsystem.com.'"", ""'bs.serving-sys.com.'"", ""'d2a12jsx2jznj5.cloudfront.net.'"", ""'images.ctfassets.net.'"", ""'videos.ctfassets.net.'"", ""'static.ring.com.'"", ""'rc3.ring.com.'""]"
+rlcdn.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+roblox.com,4202,12352999,102,21118,69540.25745,3674.963474,365.3924465,117980870,117980870,6.54,15.42,"[""'roblox.com.'"", ""'www.roblox.com.'"", ""'images.rbxcdn.com.'"", ""'css.rbxcdn.com.'"", ""'static.rbxcdn.com.'"", ""'js.rbxcdn.com.'""]"
+rocket-cdn.com,5,294,0,0,0.3900527954,0,0,-1,0,0,0,[]
+roku.com,250,1445030,14,2200,4564.1675,475.828886,459.8309994,61273279,61273279,1.18,2.16,"[""'roku.com.'"", ""'www.roku.com.'"", ""'www.googletagmanager.com.'""]"
+root-servers.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+rubiconproject.com,1557,7723469,30,3276,72726.23682,454.1437626,513.5314465,75574824,75574824,35.65,97.66,"[""'rubiconproject.com.'"", ""'magnite.com.'"", ""'www.magnite.com.'"", ""'www.googletagmanager.com.'""]"
+samsung.com,30,9275,6,1058,1434.320688,255.5770874,306.9961071,39474110,39474110,236.23,452.51,"[""'samsung.com.'"", ""'www.samsung.com.'""]"
+samsungcloud.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+samsungcloudsolution.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+samsungqbe.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+sc-cdn.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+scorecardresearch.com,406,539415,42,5928,16483.64615,682.7545166,572.3316669,101596722,101596722,103.5,179.05,"[""'scorecardresearch.com.'"", ""'www.scorecardresearch.com.'"", ""'code.jquery.com.'"", ""'www.googletagmanager.com.'"", ""'sb.scorecardresearch.com.'""]"
+sentry.io,2306,11418535,34,3428,33101.15981,480.796814,39.3872261,77076286,77076286,100.49,280.29,"[""'sentry.io.'"", ""'www.googletagmanager.com.'"", ""'plausible.io.'"", ""'www.sentry.dev.'""]"
+shalltry.com,7,837,2,416,6.215572357,0.2448558807,-1,18483526,18483526,0.42,0.8,"[""'shalltry.com.'""]"
+sharepoint.com,139,41838,22,3770,6183.784246,774.4605541,56.18739128,116607821,116607821,71.36,194.32,"[""'sharepoint.com.'"", ""'office.com.'"", ""'www.office.com.'"", ""'aka.office.com.'"", ""'products.office.com.'"", ""'www.microsoft.com.'""]"
+sharethrough.com,11937,90953292,182,32271,116399.2412,2409.882545,33.9448452,194380983,194380983,56.2,153.1,"[""'sharethrough.com.'"", ""'www.sharethrough.com.'"", ""'cdn.prod.website-files.com.'"", ""'www.googletagmanager.com.'"", ""'cdn.weglot.com.'"", ""'cmp.uniconsent.com.'"", ""'secure.kick1pore.com.'"", ""'px.ads.linkedin.com.'"", ""'assets.sharethrough.com.'"", ""'d3e54v103j8qbb.cloudfront.net.'""]"
+skype.com,2072,14717974,46,9884,57700.07062,1160.659313,485.7635498,115724946,115724946,4.88,11.09,"[""'skype.com.'"", ""'www.skype.com.'"", ""'js.monitor.azure.com.'"", ""'secure.skypeassets.com.'"", ""'wcpstatic.microsoft.com.'"", ""'www.microsoft.com.'""]"
+smartadserver.com,4355,31826823,46,5228,38200.33097,1047.404051,244.0567017,98252688,98252688,54.68,147.34,"[""'smartadserver.com.'"", ""'equativ.com.'"", ""'www.googletagmanager.com.'"", ""'cdn1.iconfinder.com.'"", ""'www.iconfinder.com.'""]"
+snapchat.com,2406,18718423,38,6277,123700.7923,397.0708847,0,98973714,98973714,143.11,406.84,"[""'snapchat.com.'"", ""'www.snapchat.com.'"", ""'static.snapchat.com.'"", ""'www.google-analytics.com.'"", ""'www.googletagmanager.com.'""]"
+spotify.com,1816,3602991,60,9838,19566.1962,980.2820683,225.7990837,136908525,136908525,146.98,417.22,"[""'www.spotify.com.'"", ""'open.spotify.com.'"", ""'open.spotifycdn.com.'"", ""'www.googleoptimize.com.'"", ""'i.scdn.co.'"", ""'pickasso.spotifycdn.com.'"", ""'charts-images.scdn.co.'""]"
+taboola.com,2216,9831385,50,6648,102815.8696,1675.545692,0,96615857,96615857,71.79,193.47,"[""'taboola.com.'"", ""'www.taboola.com.'"", ""'www.google.com.'"", ""'www.googletagmanager.com.'"", ""'helpersng.taboola.com.'""]"
+taobao.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+teads.tv,39,18046,6,916,2961.345911,615.4732704,503.6036968,39004301,39004301,0.77,1.49,"[""'teads.tv.'"", ""'cdn.teads.tv.'""]"
+tiktok.com,1458,5823901,34,7454,28235.51869,1769.582033,633.3966255,79736636,79736636,1.49,2.84,"[""'tiktok.com.'"", ""'www.tiktok.com.'"", ""'sf16-website-login.neutral.ttwstatic.com.'"", ""'lf16-tiktok-common.ibytedtos.com.'""]"
+tiktokcdn-us.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+tiktokcdn.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+tiktokv.com,25,2866,2,736,13549.12686,0.3118515015,3483.140707,19793512,19793512,15.83,44.92,"[""'tiktokv.com.'""]"
+tiktokv.us,0,0,0,0,0,0,-1,-1,0,0,0,[]
+tp-link.com,1405,6485254,22,4793,119905.0164,476.3462543,300.5158901,77068833,77068833,18.62,51.24,"[""'tp-link.com.'"", ""'www.tp-link.com.'"", ""'static.tp-link.com.'"", ""'px.ads.linkedin.com.'""]"
+trafficmanager.net,0,0,0,0,0,0,-1,-1,0,0,0,[]
+ttlivecdn.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+twimg.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+twitter.com,70,30953,10,872,2256.27923,72.38101959,516.3941383,40243213,40243213,1.12,2.35,"[""'twitter.com.'"", ""'x.com.'""]"
+ubuntu.com,3001,15155634,86,14191,40911.51953,1780.31826,0,119920476,119920476,81.08,231.07,"[""'ubuntu.com.'"", ""'assets.ubuntu.com.'"", ""'www.googletagmanager.com.'"", ""'res.cloudinary.com.'"", ""'10451423.fls.doubleclick.net.'"", ""'www.googleadservices.com.'""]"
+ui.com,623,2018022,46,7127,14979.31409,314.1243458,0,95476319,95476319,81.81,231.15,"[""'ui.com.'"", ""'cdn.cookielaw.org.'"", ""'www.facebook.com.'"", ""'www.googletagmanager.com.'"", ""'www.google.com.'""]"
+unity3d.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+vungle.com,1223,3352998,54,7872,31877.38347,556.4126968,586.9276524,117864272,117864272,17.7,49.72,"[""'vungle.com.'"", ""'liftoff.io.'"", ""'cdn-ilbanff.nitrocdn.com.'"", ""'fonts.gstatic.com.'"", ""'www.googletagmanager.com.'"", ""'js.hs-scripts.com.'""]"
+whatsapp.com,83,18907,14,1770,1195.549011,408.3328247,33.0517292,60747067,60747067,68.07,165.97,"[""'whatsapp.com.'"", ""'www.whatsapp.com.'"", ""'www.facebook.com.'""]"
+whatsapp.net,81,18809,14,1770,523.7724781,65.39511681,94.88129616,58697696,58697696,2.81,6.44,"[""'whatsapp.net.'"", ""'www.whatsapp.com.'"", ""'www.facebook.com.'""]"
+wikipedia.org,138,105834,14,1718,1447.217703,430.2711487,131.7355633,57386864,57386864,1.75,3.7,"[""'wikipedia.org.'"", ""'www.wikipedia.org.'"", ""'en.wikipedia.org.'""]"
+windows.com,86,23801,14,2653,1249.362707,351.5062332,0,69846952,69846952,36.35,99.91,"[""'windows.com.'"", ""'windows.microsoft.com.'"", ""'go.microsoft.com.'"", ""'www.microsoft.com.'""]"
+windows.net,22,3466,10,2317,580.3647041,72.0140934,503.9479733,37036118,37036118,1.97,4.71,"[""'windows.net.'"", ""'www.microsoft.com.'""]"
+windowsupdate.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+wsdvs.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+xboxlive.com,5082,16431672,198,39877,124137.2085,7629.715204,606.0402393,232381452,232381452,54.36,151.83,"[""'xboxlive.com.'"", ""'www.xbox.com.'"", ""'cdnjs.cloudflare.com.'"", ""'www.microsoft.com.'"", ""'assets-www.xbox.com.'"", ""'assets.adobedtm.com.'"", ""'img-prod-cms-rt-microsoft-com.akamaized.net.'"", ""'mwf-service.akamaized.net.'"", ""'c.s-microsoft.com.'"", ""'assets.xboxservices.com.'"", ""'wcpstatic.microsoft.com.'"", ""'mem.gfx.ms.'""]"
+xiaomi.com,4341,25140295,108,19276,87857.61285,10636.26361,1085.031271,179801215,179801215,114.38,324.95,"[""'xiaomi.com.'"", ""'www.mi.com.'"", ""'i03.appmifile.com.'"", ""'i01.appmifile.com.'"", ""'err.www.mi.com.'"", ""'www.googletagmanager.com.'"", ""'i02.appmifile.com.'"", ""'browser.sentry-cdn.com.'"", ""'cdn.alsgp0.fds.api.mi-img.com.'""]"
+yahoo.com,2692,13332490,78,14154,22149.52922,792.2539711,729.2563915,117997427,117997427,76.2,167.96,"[""'yahoo.com.'"", ""'www.yahoo.com.'"", ""'s.yimg.com.'"", ""'consent.cmp.oath.com.'"", ""'edge-mcdn.secure.yahoo.com.'"", ""'sb.scorecardresearch.com.'""]"
+yandex.net,832,509528,420,52457,10031.71873,3272.183895,1071.562767,80629560,80629560,98.45,207.35,"[""'yandex.net.'"", ""'ya.ru.'"", ""'yastatic.net.'"", ""'mc.yandex.ru.'""]"
+yandex.ru,59,21528,10,1153,4655.441284,908.2841873,400.2254009,63882968,63882968,150.8,276.82,"[""'yandex.ru.'"", ""'dzen.ru.'"", ""'sso.passport.yandex.ru.'""]"
+youtube.com,5054,35459388,60,13131,20976.23086,798.6660004,178.4331799,120202501,120202501,126.55,251.87,"[""'youtube.com.'"", ""'www.youtube.com.'"", ""'fonts.googleapis.com.'"", ""'accounts.google.com.'"", ""'fonts.gstatic.com.'"", ""'ssl.gstatic.com.'""]"
+ytimg.com,0,0,0,0,0,0,-1,-1,0,0,0,[]
+yximgs.com,7,687,2,268,21.30794525,0.1685619354,-1,20191529,20191529,0.47,0.85,"[""'yximgs.com.'""]"
+zoom.us,4162,15821885,226,44398,159361.8965,1706.05135,333.9922428,188759142,188759142,540.26,1010.68,"[""'zoom.us.'"", ""'st1.zoom.us.'"", ""'st3.zoom.us.'"", ""'st2.zoom.us.'"", ""'explore.zoom.us.'"", ""'www.zoom.com.'"", ""'cdn.cookielaw.org.'"", ""'file-paa.zoom.us.'"", ""'us01ccistatic.zoom.us.'""]"
