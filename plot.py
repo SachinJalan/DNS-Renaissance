@@ -17,18 +17,20 @@ Domain,Total Packets,Total Bytes,Total DNS Packets,Total DNS Bytes,Total Time,To
 
 # %%
 # df = pd.read_csv("results.csv")
-df = pd.read_csv("data/results-200.csv")
+df = pd.read_csv("results-1000.csv")
 df.head()
 
 
 # %%
 # clean up the data
+print(df.shape)
 # if total packets is 0 then remove the row
 df = df[df["Total Packets"] != 0]
 # if ttfb is 0 or -1 then remove the row
 df = df[df["TTFB"] != 0]
 df = df[df["TTFB"] != -1]
 df.head()
+print(df.shape)
 
 
 # %%
@@ -82,4 +84,26 @@ plt.show()
 # %%
 # number of visited domains histogram
 sns.histplot(data=df, x="Number of Visited Domains")
+plt.show()
+
+# %%
+
+# cumulative distribution of total dns time ratio
+sns.ecdfplot(data=df, x="Total DNS Time Ratio")
+plt.show()
+
+# %%
+sns.histplot(data=df, y="Number of Visited Domains")
+plt.show()
+
+
+# %%
+# bytes ratio
+df["Bytes Ratio"] = df["Total DNS Bytes"] / df["Total Bytes"]
+sns.histplot(data=df, x="Bytes Ratio")
+plt.show()
+
+# %%
+# bytes ratio cdf
+sns.ecdfplot(data=df, x="Bytes Ratio")
 plt.show()
