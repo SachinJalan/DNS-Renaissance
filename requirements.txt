@@ -10,3 +10,6 @@ scapy
 pandas
 matplotlib
 seaborn
+ipykernel
+scipy
+scikit-learn
