@@ -12,5 +12,5 @@ pnpm run dev # run puppy.js script
 ```
 
 ```sh
-wget --no-dns-cache --no-verbose -c -E -H -k -K -p https://www.gnu.org/software/wget/manual/wget.html#Relative-Links && rm -r */
+wget --no-dns-cache --no-verbose -c -E -H -k -K -p https://www.gnu.org/software/wget/manual/wget.html#Relative-Links
 ```
