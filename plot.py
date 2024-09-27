@@ -218,10 +218,11 @@ plt.show()
 
 # %%
 # number of dns resolutions, qtypes, rtypes, qclasses, rclasses, number of visited domains
-df_2["Number of Visited Domains"] = df_2["Visited Domains"].apply(
-    lambda x: len(x.split(","))
-)
+# df_2["Number of Visited Domains"] = df_2["Visited Domains"].apply(
+#     lambda x: len(x.split(","))
+# )
 visited_domains_dict = df_2["Visited Domains"].apply(eval)
+df_2["Number of Visited Domains"] = visited_domains_dict.apply(len)
 df_2["Number of DNS Resolutions"] = visited_domains_dict.apply(
     lambda x: sum([x[key]["Total Packets"] for key in x])
 )
@@ -337,3 +338,47 @@ plt.grid()
 plt.show()
 
 # %%
+sns.displot(
+    data=df_2, x="Number of Visited Domains", y="Total DNS Time Ratio", kind="hist"
+)
+plt.show()
+
+# %%
+sns.histplot(data=df_2, x="Number of Visited Domains")
+plt.show()
+
+# %%
+sns.ecdfplot(data=df_2, x="Number of Visited Domains")
+plt.show()
+
+# %%
+sns.boxenplot(data=df_2, showfliers=False, orient="h", log_scale=True)
+plt.grid()
+plt.show()
+
+sns.boxplot(data=df_2, showfliers=False, orient="h", log_scale=True)
+plt.grid()
+plt.show()
+
+# %%
+df_2_for_corr = df_2.drop(
+    columns=[
+        "Domain",
+        "Visited Domains",
+        "QTypes",
+        "RTypes",
+        "QClasses",
+        "RClasses",
+        "QTypesDict",
+        "RTypesDict",
+        "QClassesDict",
+        "RClassesDict",
+    ]
+)
+df_2_corr = pd.concat([df_2_for_corr, df_2_expanded], axis=1).corr()
+
+sns.heatmap(df_2_corr)
+plt.show()
+
+# %%
+sns.pairplot(data=df_2_for_corr)
