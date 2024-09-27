@@ -240,3 +240,100 @@ df_2.describe()
 
 # %%
 sns.ecdfplot(data=df_2, x="Number of DNS Resolutions")
+plt.show()
+
+# %%
+sns.ecdfplot(data=df_2, x="Total DNS Packets")
+plt.show()
+
+# %%
+sns.ecdfplot(data=df_2, x="Number of DNS Queries")
+sns.ecdfplot(data=df_2, x="Number of DNS Responses")
+plt.show()
+
+# %%
+sns.histplot(data=df_2, x="Number of DNS Queries")
+plt.show()
+
+# %%
+# array of qtypes, rtypes, qclasses, rclasses
+df_2["QTypes"] = visited_domains_dict.apply(
+    lambda x: [item for sublist in [x[k]["qtypes"] for k in x] for item in sublist]
+)
+df_2["RTypes"] = visited_domains_dict.apply(
+    lambda x: [item for sublist in [x[k]["rtypes"] for k in x] for item in sublist]
+)
+df_2["QClasses"] = visited_domains_dict.apply(
+    lambda x: [item for sublist in [x[k]["qclasses"] for k in x] for item in sublist]
+)
+df_2["RClasses"] = visited_domains_dict.apply(
+    lambda x: [item for sublist in [x[k]["rclasses"] for k in x] for item in sublist]
+)
+df_2.head()
+
+
+# %%
+# qtypes, rtypes, qclasses, rclasses dictionary column
+df_2["QTypesDict"] = df_2["QTypes"].apply(
+    lambda x: {item: x.count(item) for item in set(x)}
+)
+df_2["RTypesDict"] = df_2["RTypes"].apply(
+    lambda x: {item: x.count(item) for item in set(x)}
+)
+df_2["QClassesDict"] = df_2["QClasses"].apply(
+    lambda x: {item: x.count(item) for item in set(x)}
+)
+df_2["RClassesDict"] = df_2["RClasses"].apply(
+    lambda x: {item: x.count(item) for item in set(x)}
+)
+df_2.head()
+
+
+# %%
+qtypes_expanded = pd.DataFrame(df_2["QTypesDict"].tolist())
+rtypes_expanded = pd.DataFrame(df_2["RTypesDict"].tolist())
+qclasses_expanded = pd.DataFrame(df_2["QClassesDict"].tolist())
+rclasses_expanded = pd.DataFrame(df_2["RClassesDict"].tolist())
+df_2_expanded = pd.concat(
+    # [df_2, qtypes_expanded, rtypes_expanded, qclasses_expanded, rclasses_expanded],
+    [qtypes_expanded, rtypes_expanded, qclasses_expanded, rclasses_expanded],
+    axis=1,
+)
+df_2_expanded.head()
+
+# %%
+sns.boxenplot(data=df_2_expanded, orient="h", showfliers=False)
+plt.show()
+sns.boxplot(data=df_2_expanded, orient="h", showfliers=False)
+plt.show()
+
+# %%
+# histogram of byte ratio, dns time ratio, dns packet ratio
+df_2["Total Bytes Ratio"] = df_2["Total DNS Bytes"] / df_2["Total Bytes"]
+df_2["Total DNS Time Ratio"] = df_2["Total DNS Time"] / df_2["Total Time"]
+df_2["Total DNS Packet Ratio"] = df_2["Total DNS Packets"] / df_2["Total Packets"]
+
+
+# %%
+sns.histplot(data=df_2, x="Total Bytes Ratio")
+plt.show()
+
+# %%
+sns.histplot(data=df_2, x="Total DNS Time Ratio")
+plt.show()
+
+# %%
+sns.histplot(data=df_2, x="Total DNS Packet Ratio")
+plt.show()
+
+# %%
+sns.ecdfplot(data=df_2, x="Total Bytes Ratio")
+sns.ecdfplot(data=df_2, x="Total DNS Time Ratio")
+sns.ecdfplot(data=df_2, x="Total DNS Packet Ratio")
+plt.axvline(0.05, color="red", linestyle="--")
+plt.xlabel("Ratio")
+plt.legend(["Bytes", "Time", "Packets"])
+plt.grid()
+plt.show()
+
+# %%
