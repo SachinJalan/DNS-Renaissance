@@ -1,0 +1,14 @@
+{
+  "name": "puppy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node puppy.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.2.0",
+    "puppeteer-har": "^1.0.0",
+    "fs": "^0.0.1-security"
+  }
+}
