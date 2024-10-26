@@ -111,10 +111,15 @@ def save_results_to_json(results, output_file):
     with open(output_file, "w") as jsonfile:
         json.dump(results, jsonfile, indent=4)
 
+def load_results_from_json(input_file):
+    with open(input_file, "r") as jsonfile:
+        return json.load(jsonfile)
+
 def main():
-    DIR_PATH = "./pcapngs"
+    DIR_PATH = "./pcapngs2"
     pcangs =  os.listdir(DIR_PATH)
-    fin_results = {"answer":{"greater_than_512": {}, "TCP": {}, "TC_bit_set": {}}, "question": {"TCP": {}, "TC_bit_set": {}}}
+    # fin_results = {"answer":{"greater_than_512": {}, "TCP": {}, "TC_bit_set": {}}, "question": {"TCP": {}, "TC_bit_set": {}}}
+    fin_results = load_results_from_json("find-dns-tcp.json")
     for pcapng_file in pcangs:
         pcapng_file = DIR_PATH + f"/{pcapng_file}"
         domain = os.path.basename(pcapng_file)[:-7]
@@ -142,5 +147,7 @@ def main():
 
 
     save_results_to_json(fin_results_copy, "find-dns-tcp.json")
+
+
 if __name__ == "__main__":
     main()
