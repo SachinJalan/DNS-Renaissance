@@ -113,7 +113,7 @@ def cmp_resolution_methods(packets, domain):
                     #         results["total_delegated"] += vals[2]
                     # else:
                     #     results["total_delegated"] = None
-                # print(f"Domain: {domain}, Class: {qclass}, Type: {qtype}, Recursive: {vals[0]}, Iterative: {vals[1]}, Delegated: {vals[2]}")
+                print(f"\033[38;2;0;255;0m[DEBUG] Domain: {domain}, Class: {qclass}, Type: {qtype}, Recursive: {vals[0]}, Iterative: {vals[1]}, Delegated: {vals[2]}\033[0m")
     return results
 
 # def get_resolution_times(domain, qclass, qtype):
@@ -159,7 +159,7 @@ def get_resolution_times(domain, qclass, qtype):
     # print(domain)
     # DIG commands for different resolution methods
     # ns_command = ['dig','+short', '-c', qclass, '-t', 'NS', domain]
-    dig_trace_command = ['dig', '@8.8.8.8', '+trace', '-c', qclass, '-t', 'NS', domain]
+    dig_trace_command = ['dig', '@8.8.8.8', '+trace', '-c', qclass, '-t', qtype, domain]
     dig_command_iterative = ['dig', '@8.8.8.8', '+norecurse', '-c', qclass, '-t', qtype, domain]
     dig_command_recursive = ['dig', '@8.8.8.8', '+recurse', '-c', qclass, '-t', qtype, domain]
 
@@ -218,13 +218,14 @@ def get_resolution_times(domain, qclass, qtype):
             # Calculate average ping time
             # avg_ping_time = sum(float(t) for t in time_match) / len(time_match)
             avg_ping_time = time_match
-            print(f"[DEBUG] Domain: {domain}, Ns server IP: {ns_server_ip} PING TIME (avg): {avg_ping_time} ms, IP: {ns_server_ip}")
+            print(f"\033[38;2;0;255;0m[DEBUG] Domain: {domain}, Type: {qtype}, Ns server IP: {ns_server_ip} PING TIME (avg): {avg_ping_time} ms, IP: {ns_server_ip}.\033[0m")
             time_delegated = 0.5 * avg_ping_time + 0.5 * time_recursive if time_recursive else None
         else:
-            print("No ping time found.")
+            print(f"\033[38;2;255;0;0m[ERROR] No ping time found for domain {domain} IP {ns_server_ip}.\033[0m")
     else:
-        print("No authoritative NS server found.")
-        time_delegated = None
+        print(f"\033[38;2;255;0;0m[ERROR] No authoritative NS server found for {domain}.\033[0m")
+        
+        time_delegated = time_recursive
     
     return float(time_recursive), float(time_iterative), time_delegated
 
@@ -248,32 +249,32 @@ def save_results_to_csv(results, output_file):
 
 def main():
     # get_resolution_times("'iitgn.ac.in.'", "IN", "A")
-    DIR_PATH = "./pcapngs"
+    DIR_PATH = "./pcapngs2"
     pcangs =  os.listdir(DIR_PATH)
     output_file = "results-delegation-1.csv"
-    # analyzed_domains = []
-    # with open("results-test.csv", "r") as csvfile:
-    #     reader = csv.reader(csvfile)
-    #     for row in reader:
-    #         analyzed_domains.append(row[0])
-    #         print(row[0])
+    analyzed_domains = []
+    with open(output_file, "r") as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            analyzed_domains.append(row[0])
+            print(row[0])
 
-    # print("Number of already analyzed domains: ", len(analyzed_domains))
+    print("Number of already analyzed domains: ", len(analyzed_domains))
     # headers = ["domain", "recursive", "iterative", "delegated", "count"]
     headers = ["Domain", "Recursive", "Iterative", "Delegated","Visited domains"]
 
 
     # Write the CSV file
-    with open(output_file, mode="w", newline="") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=headers)
-        writer.writeheader()
+    # with open(output_file, mode="w", newline="") as csv_file:
+    #     writer = csv.DictWriter(csv_file, fieldnames=headers)
+    #     writer.writeheader()
 
     for pcapng_file in pcangs:
         pcapng_file = DIR_PATH + f"/{pcapng_file}"
         domain = os.path.basename(pcapng_file)[:-7]
-        # if domain in analyzed_domains:
-        #     print(f"{domain} already analyzed. Skipping...")
-        #     continue
+        if domain in analyzed_domains:
+            print(f"{domain} already analyzed. Skipping...")
+            continue
         # output_file = "results.csv"  # Change output file to CSV format
         packets = []
         with open(pcapng_file, "rb") as fp:
