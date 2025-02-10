@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import matplotlib as mpl
 
 # %%
 """
@@ -13,7 +13,7 @@ iitgn.ac.in,2456,11577920,76,9414,67814.94188,2493.945122,583.4434032,177504750,
 
 # %%
 # df = pd.read_csv("results.csv")
-df = pd.read_csv("data/results-1000.csv")
+df = pd.read_csv("result-metrics.csv")
 df.head()
 
 
@@ -31,27 +31,56 @@ print(df.shape)
 
 # %%
 # total packets vs total dns packets for
-
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.scatterplot(data=df, x="Total Packets", y="Total DNS Packets")
 plt.show()
 
 
 # %%
 # total bytes vs total dns bytes
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
+sns.boxplot(data=df[["Total DNS Cycles-core", "Total DNS Cycles-atom"]], log_scale=True, orient="h")
+plt.xlabel("Cycles in log scale")
+plt.savefig("/home/mithilpn/iitgn/CS499/report/images/cycles.png")
+plt.show()
 
+# %%
+# total bytes vs total dns bytes
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
+sns.boxplot(data=df[["Total DNS Energy-pkg", "Total DNS Energy-psys", "Total DNS Energy-cores"]], log_scale=True, orient="h")
+plt.xlabel("Energy (J) in log scale")
+plt.savefig("/home/mithilpn/iitgn/CS499/report/images/energy.png")
+plt.show()
+
+# %%
+# total bytes vs total dns bytes
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.scatterplot(data=df, x="Total Bytes", y="Total DNS Bytes")
 plt.show()
 
 
 # %%
 # total time vs total dns time
-
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.scatterplot(data=df, x="Total Time", y="Total DNS Time")
 plt.show()
 
 
 # %%
 # total time vs total dns time ratio
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 df["Total DNS Time Ratio"] = df["Total DNS Time"] / df["Total Time"]
 sns.histplot(data=df, x="Total DNS Time Ratio")
 plt.show()
@@ -69,38 +98,59 @@ plt.show()
 df["Number of Visited Domains"] = df["Visited Domains"].apply(
     lambda x: len(x.split(","))
 )
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.scatterplot(data=df, x="Number of Visited Domains", y="Total DNS Time Ratio")
 plt.show()
 
 # %%
 # number of visited domains vs total dns time
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.scatterplot(data=df, x="Number of Visited Domains", y="Total DNS Time")
 plt.show()
 
 # %%
 # number of visited domains histogram
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df, x="Number of Visited Domains")
 plt.show()
 
 # %%
 
 # cumulative distribution of total dns time ratio
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df, x="Total DNS Time Ratio")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df, y="Number of Visited Domains")
 plt.show()
 
 
 # %%
 # bytes ratio
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 df["Bytes Ratio"] = df["Total DNS Bytes"] / df["Total Bytes"]
 sns.histplot(data=df, x="Bytes Ratio")
 plt.show()
 
 # %%
 # bytes ratio cdf
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df, x="Bytes Ratio")
 plt.show()
 
@@ -116,6 +166,9 @@ plt.show()
 # sns.kdeplot(data=df, x="Total DNS Energy-pkg", y="Total DNS Time Ratio", fill=True)
 # sns.relplot(data=df, x="Total DNS Energy-pkg", y="Total DNS Time Ratio", hue="Number of Visited Domains")
 # sns.clustermap(data=df[["Total DNS Energy-pkg", "Total DNS Time Ratio", "Number of Visited Domains"]])
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.kdeplot(data=df, x="Total DNS Energy-pkg", y="Total DNS Time Ratio", fill=True)
 sns.scatterplot(data=df, x="Total DNS Energy-pkg", y="Total DNS Time Ratio")
 sns.rugplot(data=df, x="Total DNS Energy-pkg", y="Total DNS Time Ratio")
@@ -123,6 +176,9 @@ plt.show()
 
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.relplot(
     data=df,
     x="Total DNS Energy-pkg",
@@ -136,16 +192,25 @@ plt.show()
 df_corr = df.drop(columns=["Domain", "Visited Domains"]).corr()
 df_corr
 
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.heatmap(df_corr)
 plt.show()
 
 # %%
 # print some statistics
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 df_stats = df.describe()
 df_stats
 
 # %%
 # boxplot
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.boxplot(data=df, log_scale=True, orient="h")
 plt.show()
 
@@ -155,6 +220,9 @@ plt.show()
 # plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df, log_scale=True)
 plt.show()
 
@@ -169,15 +237,24 @@ df_norm.head()
 
 # %%
 # boxplot
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.boxplot(data=df_norm, orient="h", log_scale=True)
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df_norm)
 plt.show()
 
 # %%
 # pdf plot
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.kdeplot(data=df_norm)
 plt.show()
 
@@ -186,7 +263,7 @@ df_norm.describe()
 
 
 # %%
-df_2 = pd.read_csv("results-test-2.csv")
+df_2 = pd.read_csv("result-metrics.csv")
 df_2.head()
 
 # %%
@@ -213,6 +290,9 @@ print(df_2.shape)
 # %%
 # dns time ratio
 df_2["Total DNS Time Ratio"] = df_2["Total DNS Time"] / df_2["Total Time"]
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df_2, x="Total DNS Time Ratio")
 plt.show()
 
@@ -240,19 +320,31 @@ df_2.head()
 df_2.describe()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df_2, x="Number of DNS Resolutions")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df_2, x="Total DNS Packets")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df_2, x="Number of DNS Queries")
 sns.ecdfplot(data=df_2, x="Number of DNS Responses")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df_2, x="Number of DNS Queries")
 plt.show()
 
@@ -303,7 +395,12 @@ df_2_expanded = pd.concat(
 df_2_expanded.head()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.boxenplot(data=df_2_expanded, orient="h", showfliers=False)
+plt.xlabel("Count")
+plt.ylabel("QTypes")
 plt.show()
 sns.boxplot(data=df_2_expanded, orient="h", showfliers=False)
 plt.show()
@@ -316,42 +413,65 @@ df_2["Total DNS Packet Ratio"] = df_2["Total DNS Packets"] / df_2["Total Packets
 
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df_2, x="Total Bytes Ratio")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df_2, x="Total DNS Time Ratio")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df_2, x="Total DNS Packet Ratio")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df_2, x="Total Bytes Ratio")
 sns.ecdfplot(data=df_2, x="Total DNS Time Ratio")
 sns.ecdfplot(data=df_2, x="Total DNS Packet Ratio")
 plt.axvline(0.05, color="red", linestyle="--")
 plt.xlabel("Ratio")
 plt.legend(["Bytes", "Time", "Packets"])
-plt.grid()
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.displot(
     data=df_2, x="Number of Visited Domains", y="Total DNS Time Ratio", kind="hist"
 )
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.histplot(data=df_2, x="Number of Visited Domains")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.ecdfplot(data=df_2, x="Number of Visited Domains")
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.boxenplot(data=df_2, showfliers=False, orient="h", log_scale=True)
 plt.grid()
 plt.show()
@@ -376,9 +496,16 @@ df_2_for_corr = df_2.drop(
     ]
 )
 df_2_corr = pd.concat([df_2_for_corr, df_2_expanded], axis=1).corr()
-
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.heatmap(df_2_corr)
 plt.show()
 
 # %%
+plt.figure(figsize=(12, 8))
+mpl.rcParams["font.family"] = "Open Sans"
+mpl.rcParams["font.size"] = 20
 sns.pairplot(data=df_2_for_corr)
+
+# %%

@@ -5,3 +5,11 @@ pytest
 trio
 pytest-trio
 flake8
+seaborn
+matplotlib
+numpy
+pandas
+ipykernel
+python-pcapng
+scapy
+scikit-learn

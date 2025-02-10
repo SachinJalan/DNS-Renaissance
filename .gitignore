@@ -2,3 +2,7 @@ node_modules
 .venv
 .pytest_cache
 .__pycache__
+pcapngs
+pcapngs2
+data
+
