@@ -1,0 +1,115 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d tiktokcdn.com -c dns_results/tiktokcdn.com.csv -j dns_results/tiktokcdn.com.json",
+        "date": "2025-04-11 18:56:41.521974",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "184.85.248.66",
+        "domain": "tiktokcdn.com",
+        "mname": "a9-66.akam.net",
+        "type": "SOA"
+    },
+    {
+        "address": "2a02:26f0:117::42",
+        "domain": "tiktokcdn.com",
+        "mname": "a9-66.akam.net",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "193.108.91.97",
+        "domain": "tiktokcdn.com",
+        "recursive": "True",
+        "target": "a1-97.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:1401:2::61",
+        "domain": "tiktokcdn.com",
+        "recursive": "False",
+        "target": "a1-97.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2.22.230.67",
+        "domain": "tiktokcdn.com",
+        "recursive": "True",
+        "target": "a13-67.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:1480:800::43",
+        "domain": "tiktokcdn.com",
+        "recursive": "False",
+        "target": "a13-67.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "184.26.160.66",
+        "domain": "tiktokcdn.com",
+        "recursive": "True",
+        "target": "a12-66.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:1480:f000::42",
+        "domain": "tiktokcdn.com",
+        "recursive": "False",
+        "target": "a12-66.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "95.101.36.64",
+        "domain": "tiktokcdn.com",
+        "recursive": "True",
+        "target": "a18-64.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:1480:4800::40",
+        "domain": "tiktokcdn.com",
+        "recursive": "False",
+        "target": "a18-64.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "23.211.133.65",
+        "domain": "tiktokcdn.com",
+        "recursive": "True",
+        "target": "a6-65.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:1401:1::41",
+        "domain": "tiktokcdn.com",
+        "recursive": "False",
+        "target": "a6-65.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "184.85.248.66",
+        "domain": "tiktokcdn.com",
+        "recursive": "True",
+        "target": "a9-66.akam.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a02:26f0:117::42",
+        "domain": "tiktokcdn.com",
+        "recursive": "False",
+        "target": "a9-66.akam.net",
+        "type": "NS"
+    }
+]

@@ -1,0 +1,16 @@
+Domain,Type,Name,Address,Target,Port,String
+fbcdn.net,SOA,a.ns.facebook.com,129.134.30.12,,,
+fbcdn.net,SOA,a.ns.facebook.com,2a03:2880:f0fc:c:face:b00c:0:35,,,
+fbcdn.net,NS,b.ns.facebook.com,129.134.31.12,,,
+fbcdn.net,NS,b.ns.facebook.com,2a03:2880:f0fd:c:face:b00c:0:35,,,
+fbcdn.net,NS,d.ns.facebook.com,185.89.219.12,,,
+fbcdn.net,NS,d.ns.facebook.com,2a03:2880:f1fd:c:face:b00c:0:35,,,
+fbcdn.net,NS,a.ns.facebook.com,129.134.30.12,,,
+fbcdn.net,NS,a.ns.facebook.com,2a03:2880:f0fc:c:face:b00c:0:35,,,
+fbcdn.net,NS,c.ns.facebook.com,185.89.218.12,,,
+fbcdn.net,NS,c.ns.facebook.com,2a03:2880:f1fc:c:face:b00c:0:35,,,
+fbcdn.net,A,fbcdn.net,157.240.7.35,,,
+fbcdn.net,AAAA,fbcdn.net,2a03:2880:f10c:83:face:b00c:0:25de,,,
+fbcdn.net,TXT,fbcdn.net,,,,'google-site-verification=fK7K3F-hT-Pre47WNaVLRyk-_nC0Kc7K-IzagA5gPEw'
+fbcdn.net,TXT,fbcdn.net,,,,'v=spf1 a ~all'
+fbcdn.net,TXT,_dmarc.fbcdn.net,,,,'v=DMARC1; p=none; sp=none; rua=mailto:a@dmarc.facebookmail.com'

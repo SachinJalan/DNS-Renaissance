@@ -1,0 +1,56 @@
+Starting DNS reconnaissance at Friday 11 April 2025 06:34:24 PM IST
+Results will be saved in the dns_results directory
+----------------------------------------
+Processing domain: root-servers.net
+Running: ./dnsrecon.py -d root-servers.net -c dns_results/root-servers.net.csv
+✓ Completed scan for root-servers.net. Results saved to dns_results/root-servers.net.csv
+----------------------------------------
+Processing domain: google.com
+Running: ./dnsrecon.py -d google.com -c dns_results/google.com.csv
+✓ Completed scan for google.com. Results saved to dns_results/google.com.csv
+----------------------------------------
+Processing domain: googleapis.com
+Running: ./dnsrecon.py -d googleapis.com -c dns_results/googleapis.com.csv
+✓ Completed scan for googleapis.com. Results saved to dns_results/googleapis.com.csv
+----------------------------------------
+Processing domain: apple.com
+Running: ./dnsrecon.py -d apple.com -c dns_results/apple.com.csv
+✓ Completed scan for apple.com. Results saved to dns_results/apple.com.csv
+----------------------------------------
+Processing domain: gstatic.com
+Running: ./dnsrecon.py -d gstatic.com -c dns_results/gstatic.com.csv
+✓ Completed scan for gstatic.com. Results saved to dns_results/gstatic.com.csv
+----------------------------------------
+Processing domain: cloudflare.com
+Running: ./dnsrecon.py -d cloudflare.com -c dns_results/cloudflare.com.csv
+✓ Completed scan for cloudflare.com. Results saved to dns_results/cloudflare.com.csv
+----------------------------------------
+Processing domain: facebook.com
+Running: ./dnsrecon.py -d facebook.com -c dns_results/facebook.com.csv
+✓ Completed scan for facebook.com. Results saved to dns_results/facebook.com.csv
+----------------------------------------
+Processing domain: microsoft.com
+Running: ./dnsrecon.py -d microsoft.com -c dns_results/microsoft.com.csv
+✓ Completed scan for microsoft.com. Results saved to dns_results/microsoft.com.csv
+----------------------------------------
+Processing domain: amazonaws.com
+Running: ./dnsrecon.py -d amazonaws.com -c dns_results/amazonaws.com.csv
+✓ Completed scan for amazonaws.com. Results saved to dns_results/amazonaws.com.csv
+----------------------------------------
+Processing domain: googlevideo.com
+Running: ./dnsrecon.py -d googlevideo.com -c dns_results/googlevideo.com.csv
+✓ Completed scan for googlevideo.com. Results saved to dns_results/googlevideo.com.csv
+----------------------------------------
+Processing domain: tiktokcdn.com
+Running: ./dnsrecon.py -d tiktokcdn.com -c dns_results/tiktokcdn.com.csv
+✓ Completed scan for tiktokcdn.com. Results saved to dns_results/tiktokcdn.com.csv
+----------------------------------------
+Processing domain: fbcdn.net
+Running: ./dnsrecon.py -d fbcdn.net -c dns_results/fbcdn.net.csv
+✓ Completed scan for fbcdn.net. Results saved to dns_results/fbcdn.net.csv
+----------------------------------------
+Processing domain: whatsapp.net
+Running: ./dnsrecon.py -d whatsapp.net -c dns_results/whatsapp.net.csv
+✓ Completed scan for whatsapp.net. Results saved to dns_results/whatsapp.net.csv
+----------------------------------------
+All scans completed at Friday 11 April 2025 06:38:22 PM IST

@@ -1,0 +1,17 @@
+Domain,Type,Name,Address,Target,Port,String
+googleapis.com,SOA,ns1.google.com,216.239.32.10,,,
+googleapis.com,SOA,ns1.google.com,2001:4860:4802:32::a,,,
+googleapis.com,NS,ns2.google.com,216.239.34.10,,,
+googleapis.com,NS,ns2.google.com,2001:4860:4802:34::a,,,
+googleapis.com,NS,ns3.google.com,216.239.36.10,,,
+googleapis.com,NS,ns3.google.com,2001:4860:4802:36::a,,,
+googleapis.com,NS,ns4.google.com,216.239.38.10,,,
+googleapis.com,NS,ns4.google.com,2001:4860:4802:38::a,,,
+googleapis.com,NS,ns1.google.com,216.239.32.10,,,
+googleapis.com,NS,ns1.google.com,2001:4860:4802:32::a,,,
+googleapis.com,A,googleapis.com,142.250.192.36,,,
+googleapis.com,AAAA,googleapis.com,2404:6800:4009:828::2004,,,
+googleapis.com,TXT,googleapis.com,,,,'v=spf1 -all'
+googleapis.com,TXT,googleapis.com,,,,'MS=ms95694125'
+googleapis.com,TXT,googleapis.com,,,,'MS=ms62662176'
+googleapis.com,TXT,_dmarc.googleapis.com,,,,'v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com'

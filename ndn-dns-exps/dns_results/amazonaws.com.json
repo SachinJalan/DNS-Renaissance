@@ -1,0 +1,137 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d amazonaws.com -c dns_results/amazonaws.com.csv -j dns_results/amazonaws.com.json",
+        "date": "2025-04-11 18:56:14.297389",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "204.74.108.1",
+        "domain": "amazonaws.com",
+        "mname": "dns-external-master.amazon.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "205.251.197.41",
+        "domain": "amazonaws.com",
+        "recursive": "True",
+        "target": "ns-1321.awsdns-37.org",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:9000:5305:2900::1",
+        "domain": "amazonaws.com",
+        "recursive": "False",
+        "target": "ns-1321.awsdns-37.org",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "205.251.195.199",
+        "domain": "amazonaws.com",
+        "recursive": "True",
+        "target": "ns-967.awsdns-56.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:9000:5303:c700::1",
+        "domain": "amazonaws.com",
+        "recursive": "False",
+        "target": "ns-967.awsdns-56.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "205.251.198.134",
+        "domain": "amazonaws.com",
+        "recursive": "True",
+        "target": "ns-1670.awsdns-16.co.uk",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:9000:5306:8600::1",
+        "domain": "amazonaws.com",
+        "recursive": "False",
+        "target": "ns-1670.awsdns-16.co.uk",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "205.251.192.27",
+        "domain": "amazonaws.com",
+        "recursive": "True",
+        "target": "ns-27.awsdns-03.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2600:9000:5300:1b00::1",
+        "domain": "amazonaws.com",
+        "recursive": "False",
+        "target": "ns-27.awsdns-03.com",
+        "type": "NS"
+    },
+    {
+        "address": "44.238.46.144",
+        "domain": "amazonaws.com",
+        "exchange": "amazon-smtp.amazon.com",
+        "type": "MX"
+    },
+    {
+        "address": "72.21.210.29",
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "type": "A"
+    },
+    {
+        "address": "72.21.206.80",
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "type": "A"
+    },
+    {
+        "address": "207.171.166.22",
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "type": "A"
+    },
+    {
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "strings": "v=spf1 include:amazon.com ~all",
+        "type": "TXT"
+    },
+    {
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "strings": "atlassian-domain-verification=ZT4AapXgobCpXIWoNcd7gtMjZyOUdr4EDFMnFUWrqqqgdaQVbDvoGpRaIwj/tgPH",
+        "type": "TXT"
+    },
+    {
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "strings": "google-site-verification=EEVHeL7fVZb5ix5bR0draHWtJ5MfS0538OwXAfY8HCY",
+        "type": "TXT"
+    },
+    {
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "strings": "pf2vv39dfkf9tszsg5lggfs6tp6bkjn4",
+        "type": "TXT"
+    },
+    {
+        "domain": "amazonaws.com",
+        "name": "amazonaws.com",
+        "strings": "spf2.0/pra include:amazon.com ~all",
+        "type": "TXT"
+    },
+    {
+        "domain": "amazonaws.com",
+        "name": "_dmarc.amazonaws.com",
+        "strings": "v=DMARC1; p=quarantine; sp=none; pct=100; rua=mailto:aws-marketing-email-dmarc-rua-reports@dmarc.amazonaws.com; ruf=mailto:aws-marketing-email-dmarc-ruf-reports@dmarc.amazonaws.com",
+        "type": "TXT"
+    }
+]

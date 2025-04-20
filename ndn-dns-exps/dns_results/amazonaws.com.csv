@@ -1,0 +1,20 @@
+Domain,Type,Name,Address,Target,Port,String
+amazonaws.com,SOA,dns-external-master.amazon.com,204.74.108.1,,,
+amazonaws.com,NS,ns-1321.awsdns-37.org,205.251.197.41,,,
+amazonaws.com,NS,ns-1321.awsdns-37.org,2600:9000:5305:2900::1,,,
+amazonaws.com,NS,ns-967.awsdns-56.net,205.251.195.199,,,
+amazonaws.com,NS,ns-967.awsdns-56.net,2600:9000:5303:c700::1,,,
+amazonaws.com,NS,ns-1670.awsdns-16.co.uk,205.251.198.134,,,
+amazonaws.com,NS,ns-1670.awsdns-16.co.uk,2600:9000:5306:8600::1,,,
+amazonaws.com,NS,ns-27.awsdns-03.com,205.251.192.27,,,
+amazonaws.com,NS,ns-27.awsdns-03.com,2600:9000:5300:1b00::1,,,
+amazonaws.com,MX,amazon-smtp.amazon.com,44.238.46.144,,,
+amazonaws.com,A,amazonaws.com,72.21.210.29,,,
+amazonaws.com,A,amazonaws.com,72.21.206.80,,,
+amazonaws.com,A,amazonaws.com,207.171.166.22,,,
+amazonaws.com,TXT,amazonaws.com,,,,'v=spf1 include:amazon.com ~all'
+amazonaws.com,TXT,amazonaws.com,,,,'atlassian-domain-verification=ZT4AapXgobCpXIWoNcd7gtMjZyOUdr4EDFMnFUWrqqqgdaQVbDvoGpRaIwj/tgPH'
+amazonaws.com,TXT,amazonaws.com,,,,'google-site-verification=EEVHeL7fVZb5ix5bR0draHWtJ5MfS0538OwXAfY8HCY'
+amazonaws.com,TXT,amazonaws.com,,,,'pf2vv39dfkf9tszsg5lggfs6tp6bkjn4'
+amazonaws.com,TXT,amazonaws.com,,,,'spf2.0/pra include:amazon.com ~all'
+amazonaws.com,TXT,_dmarc.amazonaws.com,,,,'v=DMARC1; p=quarantine; sp=none; pct=100; rua=mailto:aws-marketing-email-dmarc-rua-reports@dmarc.amazonaws.com; ruf=mailto:aws-marketing-email-dmarc-ruf-reports@dmarc.amazonaws.com'

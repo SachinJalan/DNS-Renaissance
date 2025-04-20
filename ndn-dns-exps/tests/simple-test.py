@@ -46,9 +46,12 @@ def run():
     # Dictionary to store the client-side cache
     client_cache = {}  # Format: {domain+rtype: content}
     
-    domains_txt = "/home/mithilpn/projects/domain.txt"
-    dnsrecon_results_dir = "/home/mithilpn/projects/dns_results"
-    server_conf_dir = "/home/mithilpn/projects/ndn-dns-exps/server-configs"
+    # domains_txt = "/home/mithilpn/projects/domain.txt"
+    # dnsrecon_results_dir = "/home/mithilpn/projects/dns_results"
+    # server_conf_dir = "/home/mithilpn/projects/ndn-dns-exps/server-configs"
+    domains_txt = "domain.txt"
+    dnsrecon_results_dir = "dns_results"
+    server_conf_dir = "server-configs"
 
     if not os.path.exists(domains_txt):
         print(f"Domains file {domains_txt} not found.")
@@ -117,17 +120,17 @@ def run():
         # Advertise with NLSR and create direct route setup
         ndn.net[source].cmd(f'nlsrc advertise {prefix}')
         
-        # Use direct route setup with Nfdc to ensure connectivity
-        for host in ndn.net.hosts:
-            if host.name != source:
-                info(f"Creating direct route from {host.name} to {source} for {prefix}\n")
-                host_links = host.connectionsTo(ndn.net[source])
-                if host_links:
-                    interface = host_links[0][0]
-                    source_ip = host_links[0][1].IP()
-                    Nfdc.createFace(host, source_ip)
-                    Nfdc.registerRoute(host, prefix, source_ip, cost=0)
-                    Nfdc.setStrategy(host, prefix, Nfdc.STRATEGY_BEST_ROUTE)
+        # # Use direct route setup with Nfdc to ensure connectivity
+        # for host in ndn.net.hosts:
+        #     if host.name != source:
+        #         info(f"Creating direct route from {host.name} to {source} for {prefix}\n")
+        #         host_links = host.connectionsTo(ndn.net[source])
+        #         if host_links:
+        #             interface = host_links[0][0]
+        #             source_ip = host_links[0][1].IP()
+        #             Nfdc.createFace(host, source_ip)
+        #             Nfdc.registerRoute(host, prefix, source_ip, cost=0)
+        #             Nfdc.setStrategy(host, prefix, Nfdc.STRATEGY_BEST_ROUTE)
                     
         # Verify that the config was created correctly
         info(f"Config file on {source}:\n{ndn.net[source].cmd('cat server-config/' + domain + '-server.conf')}\n")
@@ -174,7 +177,10 @@ def run():
         receiver = event["reciever"]
         domain = event["domain"]
         rtype = event["rtype"]
-        content_name = f"{'/'.join(domain.split('.')[-1::-1])}"
+        # Construct the base prefix
+        base_prefix = "/" + "/".join(domain.split(".")[::-1])
+        # Construct the specific content name including the record type
+        content_name = f"{base_prefix}/{rtype}" 
         timestamp = event["timestamp"]
         
         # Create unique cache key
@@ -188,26 +194,28 @@ def run():
             info(f"Cached content: {cached_value}\n")
             continue
         
-        # Not in cache, perform ndnpeek (without unsupported -t option)
+        # Not in cache, perform ndnpeek using consumer.cmd
         info(f"CACHE MISS: Requesting {domain} {rtype} via {content_name}\n")
-        
-        # Run ndnpeek - use basic syntax without timeout
-        peek_output = consumer.cmd(f"ndnpeek -p {content_name}")
+        # Revert back to consumer.cmd without explicit socket path
+        # ndnpeek_cmd = "ndnpeek {} > peek-data/{}-{}.txt".format(content_name, domain, rtype)
+        ndnpeek_cmd = "ndnpeek {} | ndn-dissect".format(content_name)
+        # ndnpeek_cmd = "ndnpeek -p {}".format(content_name)
+        print(f"Executing command: {ndnpeek_cmd}\n")
+        peek_output = consumer.cmd(ndnpeek_cmd)
         
         # Save output to file and log
-        consumer.cmd(f"echo '{peek_output}' > peek-data/{domain}-{rtype}.txt")
         info(f"ndnpeek output: {peek_output}\n")
         
-        # Check for errors in the output
-        if "ERROR" in peek_output:
-            info(f"Warning: ndnpeek returned an error: {peek_output}\n")
-            # Try with different flag format in case syntax is different
-            peek_output = consumer.cmd(f"ndnpeek {content_name}")
-            info(f"Retry with basic syntax: {peek_output}\n")
-            consumer.cmd(f"echo '{peek_output}' >> peek-data/{domain}-{rtype}.txt")
+        # get the peek output file from the consumer a
+        # consumer.cmd(f"mv peek-data/{domain}-{rtype}.txt {ndn.workDir}/{consumer.name}/peek-data/")
+
         
-        # Store in cache
-        if peek_output and ("ERROR" not in peek_output):
+        # Check for errors in the output string
+        if "ERROR" in peek_output or "Nack" in peek_output or "NoRoute" in peek_output:
+             info(f"Warning: ndnpeek returned an error or Nack/NoRoute: {peek_output}\n")
+
+        # Store in cache (only if successful - check for common failure indicators)
+        if peek_output and "ERROR" not in peek_output and "Nack" not in peek_output and "NoRoute" not in peek_output:
             # If existing key at position, remove from map
             if cache_keys[cache_index] in cache_map:
                 del cache_map[cache_keys[cache_index]]
@@ -218,7 +226,29 @@ def run():
             cache_index = (cache_index + 1) % CACHE_SIZE
             
             info(f"Stored result in cache for {domain} {rtype} at position {(cache_index-1) % CACHE_SIZE}\n")
-    
+        else:
+             # Store the failure indication in cache as well
+             if cache_keys[cache_index] in cache_map:
+                 del cache_map[cache_keys[cache_index]]
+             
+             cache_keys[cache_index] = cache_key
+             # Store a simplified error string based on output
+             if "NoRoute" in peek_output:
+                 error_indication = "NoRoute"
+             elif "Nack" in peek_output:
+                 error_indication = "Nack"
+             elif "Timeout" in peek_output: # Check for timeout messages
+                 error_indication = "Timeout"
+             elif "ERROR" in peek_output:
+                 error_indication = "Error"
+             else: # Default fallback if output is empty or has unknown failure
+                 error_indication = "Timeout/Unknown"
+             cache_values[cache_index] = error_indication 
+             cache_map[cache_key] = cache_index
+             cache_index = (cache_index + 1) % CACHE_SIZE
+             info(f"Stored failure indication '{error_indication}' in cache for {domain} {rtype} at position {(cache_index-1) % CACHE_SIZE}\n")
+
+
     # Show ping server log to see if any requests were received
     info("\nTraffic Server Logs:\n")
     for source in sources:
@@ -231,9 +261,9 @@ def run():
         if cache_keys[i]:  # Only show non-empty cache entries
             info(f"Position {i}: {cache_keys[i]} -> {cache_values[i]}\n")
     
-    info("\nPeek Results from Files:\n")
-    all_results = consumer.cmd("cat peek-data/*")
-    info(all_results)
+    # info("\nPeek Results from Files:\n")
+    # all_results = consumer.cmd("cat peek-data/*")
+    # info(all_results)
     
     # Cleanup
     ndn.stop()
