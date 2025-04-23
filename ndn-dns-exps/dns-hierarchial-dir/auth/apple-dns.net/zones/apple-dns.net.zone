@@ -1,0 +1,18 @@
+$TTL 86400
+apple-dns.net.    IN      SOA     auth-server-apple-dns-net. admin.apple-dns.net. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-apple-dns-net.
+
+c.ns.apple.com    IN      NS      .
+c.ns.apple.com    IN      NS      .
+d.ns.apple.com    IN      NS      .
+d.ns.apple.com    IN      NS      .
+a.ns.apple.com    IN      NS      .
+a.ns.apple.com    IN      NS      .
+b.ns.apple.com    IN      NS      .
+b.ns.apple.com    IN      NS      .

@@ -1,0 +1,22 @@
+$TTL 86400
+whatsapp.net.    IN      SOA     auth-server-whatsapp-net. admin.whatsapp.net. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-whatsapp-net.
+
+c.ns.whatsapp.net    IN      NS      .
+c.ns.whatsapp.net    IN      NS      .
+b.ns.whatsapp.net    IN      NS      .
+b.ns.whatsapp.net    IN      NS      .
+d.ns.whatsapp.net    IN      NS      .
+d.ns.whatsapp.net    IN      NS      .
+a.ns.whatsapp.net    IN      NS      .
+a.ns.whatsapp.net    IN      NS      .
+whatsapp.net    IN      A       157.240.16.52
+whatsapp.net    IN      AAAA    2a03:2880:f33e:123:face:b00c:0:167
+whatsapp.net    IN      TXT     "'google-site-verification=K67eUkrXbL-MM2pcYlUhcne9l4-oGJCzJHRwFpTv5fE'"
+whatsapp.net    IN      TXT     "'v=spf1 -all'"

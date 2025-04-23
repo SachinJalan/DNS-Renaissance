@@ -148,14 +148,14 @@ class DnsTrafficGenerator:
             domain_index = int(self.zipf.rv()) - 1
             domain = self.domains[domain_index]
             rtype = random.choice(self.domain_rtypes[domain])
-            traffic.append({"timestamp":timestamp_str, "reciever":receiver, "domain":domain, "rtype":rtype, "log":log}) 
+            traffic.append({"timestamp":timestamp_str, "receiver":receiver, "domain":domain, "rtype":rtype, "log":log}) 
             n_requests_copy -= 1
             if rtype == "A" and n_requests_copy > 0:
                 log = n_requests_copy <= n_requests
                 t_event += random.expovariate(self.rate)
                 timestamp = start_time + timedelta(seconds=t_event)  # Convert t_event to a timestamp
                 timestamp_str = timestamp.isoformat() + "Z"  # Format as ISO 8601 with 'Z' for UTC
-                traffic.append({"timestamp":timestamp_str, "reciever":receiver, "domain":domain, "rtype":"AAAA", "log":log}) 
+                traffic.append({"timestamp":timestamp_str, "receiver":receiver, "domain":domain, "rtype":"AAAA", "log":log}) 
                 n_requests_copy -= 1
 
         return traffic

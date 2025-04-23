@@ -1,0 +1,28 @@
+$TTL 86400
+amazonaws.com.    IN      SOA     auth-server-amazonaws-com. admin.amazonaws.com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-amazonaws-com.
+
+ns-27.awsdns-03.com    IN      NS      .
+ns-27.awsdns-03.com    IN      NS      .
+ns-1321.awsdns-37.org    IN      NS      .
+ns-1321.awsdns-37.org    IN      NS      .
+ns-967.awsdns-56.net    IN      NS      .
+ns-967.awsdns-56.net    IN      NS      .
+ns-1670.awsdns-16.co.uk    IN      NS      .
+ns-1670.awsdns-16.co.uk    IN      NS      .
+amazon-smtp.amazon.com    IN      MX      10 .
+amazonaws.com    IN      A       72.21.206.80
+amazonaws.com    IN      A       207.171.166.22
+amazonaws.com    IN      A       72.21.210.29
+amazonaws.com    IN      TXT     "'pf2vv39dfkf9tszsg5lggfs6tp6bkjn4'"
+amazonaws.com    IN      TXT     "'v=spf1 include:amazon.com ~all'"
+amazonaws.com    IN      TXT     "'google-site-verification=EEVHeL7fVZb5ix5bR0draHWtJ5MfS0538OwXAfY8HCY'"
+amazonaws.com    IN      TXT     "'atlassian-domain-verification=ZT4AapXgobCpXIWoNcd7gtMjZyOUdr4EDFMnFUWrqqqgdaQVbDvoGpRaIwj/tgPH'"
+amazonaws.com    IN      TXT     "'spf2.0/pra include:amazon.com ~all'"
+_dmarc.amazonaws.com    IN      TXT     "'v=DMARC1; p=quarantine; sp=none; pct=100; rua=mailto:aws-marketing-email-dmarc-rua-reports@dmarc.amazonaws.com; ruf=mailto:aws-marketing-email-dmarc-ruf-reports@dmarc.amazonaws.com'"

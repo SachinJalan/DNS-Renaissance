@@ -1,0 +1,26 @@
+$TTL 86400
+example.com.    IN      SOA     auth-server-example-com. admin.example.com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-example-com.
+
+; A records
+example.com.    IN      A       192.0.2.1
+www.example.com.        IN      A       192.0.2.2
+mail.example.com.       IN      A       192.0.2.3
+
+; MX records
+example.com.    IN      MX      10 mail.example.com.
+
+; CNAME records
+ftp.example.com.        IN      CNAME   www.example.com.
+
+; TXT records
+example.com.    IN      TXT     "v=spf1 ip4:192.0.2.0/24 ~all"
+
+; AAAA records
+example.com.    IN      AAAA    2001:db8::1

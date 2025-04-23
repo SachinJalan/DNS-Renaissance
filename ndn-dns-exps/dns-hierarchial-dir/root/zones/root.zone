@@ -1,0 +1,14 @@
+$TTL 86400
+.       IN      SOA     root-server. admin.root-server. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+        IN      NS      root-server.
+
+com.    IN      NS      tld-server-com.
+com.    IN      A       192.168.0.50  ; Placeholder IP
+net.    IN      NS      tld-server-net.
+net.    IN      A       192.168.0.51  ; Placeholder IP

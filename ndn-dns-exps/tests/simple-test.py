@@ -18,6 +18,26 @@ import shutil
 from mininet.topo import Topo
 import glob
 
+def make_temp_client_config(server_config, temp_config_path):
+    """
+    Create a temporary client configuration file based on the server configuration.
+    """
+    with open(server_config, "r") as f:
+        lines = f.readlines()
+
+    # Modify the lines as needed for the client config
+    modified_lines = ["TrafficPercentage=100\n"]
+    for line in lines:
+        if line.startswith("Content="):
+            # Modify the content line for the client config
+            modified_line = line.replace("Content=", "ExpectedContent=")
+            modified_lines.append(modified_line)
+        elif line.startswith("Name="):
+            modified_lines.append(line)
+
+    with open(temp_config_path, "w") as f:
+        f.writelines(modified_lines)
+
 
 def run():
     Minindn.cleanUp()
@@ -30,7 +50,7 @@ def run():
 
     topo.addLink(a, b, delay='10ms', bw=10) # bw = bandwidth
     topo.addLink(b, c, delay='10ms', bw=10)
-    topo.addLink(a, c, delay='10ms', bw=10)
+    # topo.addLink(a, c, delay='10ms', bw=10)
 
     ndn = Minindn(topo=topo)
     ndn.start()
@@ -38,20 +58,15 @@ def run():
     info("Configuring NFD\n")
     AppManager(ndn, ndn.net.hosts, Nfd, logLevel="DEBUG")
     info("Configuring NLSR\n")
-    AppManager(ndn, ndn.net.hosts, Nlsr, logLevel="INFO")
-    
+    AppManager(ndn, ndn.net.hosts, Nlsr, logLevel="DEBUG")
     info("Waiting for NLSR convergence...\n")
     Experiment.checkConvergence(ndn, ndn.net.hosts, convergenceTime=30)
-    
-    # Dictionary to store the client-side cache
-    client_cache = {}  # Format: {domain+rtype: content}
-    
-    # domains_txt = "/home/mithilpn/projects/domain.txt"
-    # dnsrecon_results_dir = "/home/mithilpn/projects/dns_results"
-    # server_conf_dir = "/home/mithilpn/projects/ndn-dns-exps/server-configs"
-    domains_txt = "domain.txt"
-    dnsrecon_results_dir = "dns_results"
-    server_conf_dir = "server-configs"
+    domains_txt = "/home/mithilpn/projects/domain.txt"
+    dnsrecon_results_dir = "/home/mithilpn/projects/dns_results"
+    server_conf_dir = "/home/mithilpn/projects/ndn-dns-exps/server-configs"
+    # domains_txt = "domain.txt"
+    # dnsrecon_results_dir = "dns_results"
+    # server_conf_dir = "server-configs"
 
     if not os.path.exists(domains_txt):
         print(f"Domains file {domains_txt} not found.")
@@ -63,10 +78,11 @@ def run():
         domains_dict = {}
         for domain in domains[:2]:
             rtypes = []
-            domain_base = domain.rstrip(".")
-            csv_file = os.path.join(dnsrecon_results_dir, f"{domain_base}.csv")
+            csv_file = os.path.join(dnsrecon_results_dir, f"{domain}.csv")
+            if  domain[-1] != ".":
+                domain += "."
             if not os.path.exists(csv_file):
-                print(f"CSV file for {domain_base} not found.")
+                print(f"CSV file for {domain} not found.")
                 continue
             with open(csv_file) as csvfile:
                 reader = csv.reader(csvfile)
@@ -75,68 +91,60 @@ def run():
                     rtype = row[1]
                     if rtype not in rtypes:
                         rtypes.append(rtype)
-            domains_dict[domain_base] = rtypes
+            domains_dict[domain] = rtypes
 
     # Generate traffic requests
-    generator = DnsTrafficGenerator(domains_dict, ['a',], alpha=1.0, rate=1.0)
-    traffic = generator.generate_traffic(n_requests=5, n_warmup_requests=0)
+    n_requests = 4
+    n_warmup_requests = 0
+    total_requests = n_requests + n_warmup_requests
+    receivers = ["a"]
+    generator = DnsTrafficGenerator(domains_dict, receivers, alpha=1.0, rate=1.0)
+    traffic = generator.generate_traffic(n_requests=n_requests, n_warmup_requests=n_warmup_requests)
     domain_keys = list(domains_dict.keys())
     sources = ["b", "c"]
-    
+    total_time = 0
+    source_domain_map = {}
     # === STEP 1: Start traffic servers on sources ===
     for i, source in enumerate(sources):
         domain = domain_keys[i]
-        conf_path = os.path.join(server_conf_dir, f"{domain}.-server.conf")
         
-        # Verify config file exists
-        if not os.path.exists(conf_path):
-            info(f"ERROR: Config file {conf_path} not found!\n")
-            continue
+        # Kill any existing ndn-traffic-server instances first
+        # info(f"Killing any existing ndn-traffic-server instances on {source}\n")
+        # info(ndn.net[source].cmd("pkill -f ndn-traffic-server || true"))
         
         # Create server config directory
-        ndn.net[source].cmd("mkdir -p server-config")
+        info(f"Creating server config directory on {source}\n")
+        info(ndn.net[source].cmd("mkdir -p server-config"))
         
         # Create content and correctly format server config file
         info(f"Creating traffic server config for {domain} on {source}\n")
-        if domain == "google.com":
-            config_content = "Name=/com/google\nFreshnessPeriod=1000\nContent={\"dns\":\"google.com\",\"records\":[{\"type\":\"A\",\"value\":\"142.250.182.174\"},{\"type\":\"AAAA\",\"value\":\"2404:6800:4002:82e::200e\"}]}"
-        else:  # googleapis.com
-            config_content = "Name=/com/googleapis\nFreshnessPeriod=1000\nContent={\"dns\":\"googleapis.com\",\"records\":[{\"type\":\"A\",\"value\":\"142.250.194.228\"},{\"type\":\"AAAA\",\"value\":\"2404:6800:4009:828::2004\"}]}"
         
         # Write config directly to node
-        config_path = f"{ndn.workDir}/{source}/server-config/{domain}-server.conf"
-        ndn.net[source].cmd(f'echo "{config_content}" > server-config/{domain}-server.conf')
+        config_path_src = os.path.join(server_conf_dir, f"{domain}-server.conf")
+        if not os.path.exists(config_path_src):
+            info(f"ERROR: Config file {config_path_src} not found!\n")
+            continue
+        
+        config_path_dst = f"{ndn.workDir}/{source}/server-config/{domain}-server.conf"
+        shutil.copy(config_path_src, config_path_dst)
         
         # Start traffic server with debugging
         info(f"Starting traffic server for {domain} on {source}\n")
-        out = ndn.net[source].cmd(
-            f"ndn-traffic-server server-config/{domain}-server.conf > server-log.txt 2>&1 &"
+        ndn.net[source].cmd(
+            f"ndn-traffic-server -c 1 server-config/{domain}-server.conf > server-log.txt 2>&1 &"
         )
-        
-        # Prepare NDN prefix with correct format
-        prefix = "/" + "/".join(domain.split(".")[::-1])
-        info(f"Advertising {prefix} on {source}\n")
-        
-        # Advertise with NLSR and create direct route setup
-        ndn.net[source].cmd(f'nlsrc advertise {prefix}')
-        
-        # # Use direct route setup with Nfdc to ensure connectivity
-        # for host in ndn.net.hosts:
-        #     if host.name != source:
-        #         info(f"Creating direct route from {host.name} to {source} for {prefix}\n")
-        #         host_links = host.connectionsTo(ndn.net[source])
-        #         if host_links:
-        #             interface = host_links[0][0]
-        #             source_ip = host_links[0][1].IP()
-        #             Nfdc.createFace(host, source_ip)
-        #             Nfdc.registerRoute(host, prefix, source_ip, cost=0)
-        #             Nfdc.setStrategy(host, prefix, Nfdc.STRATEGY_BEST_ROUTE)
-                    
+
+        prefix = "/".join(domain.split(".")[::-1])
+        print(f"Advertising prefix {prefix} on {source}\n")
+        info(ndn.net[source].cmd(f'nlsrc advertise {prefix}'))
+        sleep(10)  # Allow time for routing convergence
+        route_check = ndn.net[source].cmd(f'nfdc route list | grep {prefix}')
+        info(f"Route check on {source}: {route_check}\n")
+
+        source_domain_map[source] = domain
         # Verify that the config was created correctly
-        info(f"Config file on {source}:\n{ndn.net[source].cmd('cat server-config/' + domain + '-server.conf')}\n")
-        
-        # Wait a moment for the server to start up
-        sleep(1)
+        # info(f"Config file on {source}:\n{ndn.net[source].cmd('cat server-config/' + domain + '-server.conf')}\n")
+    
         
         # Verify server is running
         server_pid = ndn.net[source].cmd("pgrep -f ndn-traffic-server")
@@ -146,65 +154,84 @@ def run():
             info(f"WARNING: Traffic server not running on {source}!\n")
             
             # Attempt to start with more debugging
-            debug_output = ndn.net[source].cmd(f"ndn-traffic-server server-config/{domain}-server.conf")
-            info(f"Debug output from server startup attempt: {debug_output}\n")
+            # debug_output = ndn.net[source].cmd(f"ndn-traffic-server -c {total_requests} server-config/{domain}-server.conf &")
+            # info(f"Debug output from server startup attempt: {debug_output}\n")
     
     # Let NLSR propagate routes
-    info("Waiting for routes to propagate...\n")
-    sleep(10)
+
+    # info("Waiting for routes to propagate...\n")
+
     
     # Show FIB state on each host to confirm routes
-    for host in ndn.net.hosts:
-        info(f"Routes in {host.name}'s FIB:\n")
-        info(host.cmd(f"nfdc fib list | grep -E '/com/(google|googleapis)'"))
+    for receiver in receivers:
+        info(f"Routes in {receiver}'s FIB:\n")
+        info(ndn.net[receiver].cmd(f"nfdc fib list"))
+
+    for source in sources:
+        # check if the server is running
+        server_pid = ndn.net[source].cmd("pgrep -f ndn-traffic-server")
+        if server_pid:
+            info(f"Traffic server running on {source} with PID {server_pid}\n")
+        else:
+            info(f"WARNING: Traffic server not running on {source}!\n")
     
     # === STEP 2: Perform ndnpeek requests ===
     info("Starting DNS lookup requests...\n")
-    
-    # Create directory for peek results
-    consumer = ndn.net['a']
-    consumer.cmd("mkdir -p peek-data")
+
     
     # Setup circular buffer cache with fixed size
-    CACHE_SIZE = 5
-    cache_keys = [""] * CACHE_SIZE
-    cache_values = [""] * CACHE_SIZE
-    cache_index = 0
-    cache_map = {}
+    CACHE_SIZE = 100
+    caches = {}
+    wrtie_indexs = {}
+    for receiver in receivers:
+        caches[receiver] = [[],] * CACHE_SIZE
+        wrtie_indexs[receiver] = 0
+        if not os.path.exists(f"{ndn.workDir}/{receiver}/peek-data"):
+            os.makedirs(f"{ndn.workDir}/{receiver}/peek-data")
+        
+
     
     # Process each DNS request
     for event in traffic:
-        receiver = event["reciever"]
+        receiver = event["receiver"]
         domain = event["domain"]
         rtype = event["rtype"]
         # Construct the base prefix
-        base_prefix = "/" + "/".join(domain.split(".")[::-1])
+        base_prefix = "/".join(domain.split(".")[::-1])
+        
         # Construct the specific content name including the record type
-        content_name = f"{base_prefix}/{rtype}" 
+        content_name = f"{base_prefix}" 
         timestamp = event["timestamp"]
-        
-        # Create unique cache key
-        cache_key = f"{domain}:{rtype}"
-        
+
+        cache = caches[receiver]
+        wrtie_index = wrtie_indexs[receiver]
         # Check cache
-        if cache_key in cache_map:
-            position = cache_map[cache_key]
-            cached_value = cache_values[position]
-            info(f"CACHE HIT: Using cached result for {domain} {rtype}\n")
-            info(f"Cached content: {cached_value}\n")
-            continue
-        
-        # Not in cache, perform ndnpeek using consumer.cmd
-        info(f"CACHE MISS: Requesting {domain} {rtype} via {content_name}\n")
+        for cache_entry in cache:
+            if cache_entry and cache_entry[0] == domain.rstrip(".") and cache_entry[1] == rtype:
+                info(f"CACHE HIT: Using cached result for {domain} {rtype}\n")
+                info(f"Cached content: {cache_entry}\n")
+                total_time += 0
+                continue
+
+        consumer = ndn.net[receiver]
+        info(f"CACHE MISS: {receiver} Requesting {domain} {rtype} via {content_name}\n")
         # Revert back to consumer.cmd without explicit socket path
         # ndnpeek_cmd = "ndnpeek {} > peek-data/{}-{}.txt".format(content_name, domain, rtype)
-        ndnpeek_cmd = "ndnpeek {} | ndn-dissect".format(content_name)
-        # ndnpeek_cmd = "ndnpeek -p {}".format(content_name)
-        print(f"Executing command: {ndnpeek_cmd}\n")
+        ndnpeek_cmd = f"ndnpeek -p {content_name} -v"
+        # print(f"Executing command: {ndnpeek_cmd}\n")
         peek_output = consumer.cmd(ndnpeek_cmd)
-        
-        # Save output to file and log
-        info(f"ndnpeek output: {peek_output}\n")
+        info(f"ndnpeek output\n: {peek_output}\n##########################")
+
+        with open(f"{ndn.workDir}/{receiver}/peek-data/log.txt", "a") as f:
+            f.write(f"Domain: {domain}, Rtype: {rtype}, Output: {peek_output}\n")
+
+        # Extract RTT info from peek_output
+        rtt = peek_output.split("RTT: ")[1].split("ms")[0]
+        if rtt:
+            total_time += float(rtt)
+            info(f"RTT for {domain} {rtype}: {rtt} ms\n")
+
+
         
         # get the peek output file from the consumer a
         # consumer.cmd(f"mv peek-data/{domain}-{rtype}.txt {ndn.workDir}/{consumer.name}/peek-data/")
@@ -216,57 +243,78 @@ def run():
 
         # Store in cache (only if successful - check for common failure indicators)
         if peek_output and "ERROR" not in peek_output and "Nack" not in peek_output and "NoRoute" not in peek_output:
-            # If existing key at position, remove from map
-            if cache_keys[cache_index] in cache_map:
-                del cache_map[cache_keys[cache_index]]
+            # parse peek_output to get the content
+            records = [unparsed_rec.split("-") for unparsed_rec in peek_output.split("+")]
+            for record in records:
+                cache[wrtie_index] = record
+                # info(f"Stored result in cache for {record[0]} {record[1]} at position {wrtie_index}\n")
+                wrtie_index = (wrtie_index + 1) % CACHE_SIZE
             
-            cache_keys[cache_index] = cache_key
-            cache_values[cache_index] = peek_output
-            cache_map[cache_key] = cache_index
-            cache_index = (cache_index + 1) % CACHE_SIZE
-            
-            info(f"Stored result in cache for {domain} {rtype} at position {(cache_index-1) % CACHE_SIZE}\n")
-        else:
-             # Store the failure indication in cache as well
-             if cache_keys[cache_index] in cache_map:
-                 del cache_map[cache_keys[cache_index]]
+        caches[receiver] = cache
+        wrtie_indexs[receiver] = wrtie_index
+        # sleep(2)
+
+        # temp_path = "/home/mithilpn/projects/ndn-dns-exps/client-configs/client.conf"
+        # for source in source_domain_map:
+        #     if source_domain_map[source] == domain:
+        #         server_config = f"{ndn.workDir}/{source}/server-config/{domain}-server.conf"
+        #         # Create a temporary client config based on the server config
+        #         make_temp_client_config(server_config, temp_path)
+        #         # Copy the server config to the consumer's directory
+        #         # shutil.copy(server_config, f"{ndn.workDir}/{receiver}/peek-data/")
+        #         # Copy the temporary client config to the consumer's directory
+        #         shutil.copy(temp_path, f"{ndn.workDir}/{receiver}/peek-data/client.conf")
+        #         break
+        # ndn.net[receiver].cmd(f"ndn-traffic-client -c {1} peek-data/client.conf > clinet-log.txt 2>&1 &")
+
+        # make_temp_client_config(config_path_dst, temp_path)
+        # else:
+        #      # Store the failure indication in cache as well
+        #      if cache_keys[cache_index] in cache_map:
+        #          del cache_map[cache_keys[cache_index]]
              
-             cache_keys[cache_index] = cache_key
-             # Store a simplified error string based on output
-             if "NoRoute" in peek_output:
-                 error_indication = "NoRoute"
-             elif "Nack" in peek_output:
-                 error_indication = "Nack"
-             elif "Timeout" in peek_output: # Check for timeout messages
-                 error_indication = "Timeout"
-             elif "ERROR" in peek_output:
-                 error_indication = "Error"
-             else: # Default fallback if output is empty or has unknown failure
-                 error_indication = "Timeout/Unknown"
-             cache_values[cache_index] = error_indication 
-             cache_map[cache_key] = cache_index
-             cache_index = (cache_index + 1) % CACHE_SIZE
-             info(f"Stored failure indication '{error_indication}' in cache for {domain} {rtype} at position {(cache_index-1) % CACHE_SIZE}\n")
+        #      cache_keys[cache_index] = cache_key
+        #      # Store a simplified error string based on output
+        #      if "NoRoute" in peek_output:
+        #          error_indication = "NoRoute"
+        #      elif "Nack" in peek_output:
+        #          error_indication = "Nack"
+        #      elif "Timeout" in peek_output: # Check for timeout messages
+        #          error_indication = "Timeout"
+        #      elif "ERROR" in peek_output:
+        #          error_indication = "Error"
+        #      else: # Default fallback if output is empty or has unknown failure
+        #          error_indication = "Timeout/Unknown"
+        #      cache_values[cache_index] = error_indication 
+        #      cache_map[cache_key] = cache_index
+        #      cache_index = (cache_index + 1) % CACHE_SIZE
+        #      info(f"Stored failure indication '{error_indication}' in cache for {domain} {rtype} at position {(cache_index-1) % CACHE_SIZE}\n")
 
 
     # Show ping server log to see if any requests were received
-    info("\nTraffic Server Logs:\n")
-    for source in sources:
-        info(f"=== {source} Server Log ===\n")
-        info(ndn.net[source].cmd("cat server-log.txt"))
+    # info("\nTraffic Server Logs:\n")
+    # for source in sources:
+    #     info(f"=== {source} Server Log ===\n")
+    #     info(ndn.net[source].cmd("cat server-log.txt"))
     
     # === STEP 3: Show final peek results ===
-    info("\nFinal Cache Contents:\n")
-    for i in range(CACHE_SIZE):
-        if cache_keys[i]:  # Only show non-empty cache entries
-            info(f"Position {i}: {cache_keys[i]} -> {cache_values[i]}\n")
-    
+    # info("\nFinal Cache Contents:\n")
+    # for i in range(CACHE_SIZE):
+    #     if cache[i]:  # Only show non-empty cache entries
+    #         info(f"Position {i}: {cache[i]}\n")
+    # info(f"Final cache write index: {wrtie_index}\n")
     # info("\nPeek Results from Files:\n")
     # all_results = consumer.cmd("cat peek-data/*")
     # info(all_results)
     
     # Cleanup
+    # for host in ndn.net.hosts:
+    #     host.cmd("rm -rf ./")
+    
+    print(f"########################################\nTotal time taken for all requests: {total_time} ms\n")
+    print(f"Average time taken for all requests: {total_time / n_requests} ms\n")
     ndn.stop()
+
 
 if __name__ == "__main__":
     setLogLevel("info")

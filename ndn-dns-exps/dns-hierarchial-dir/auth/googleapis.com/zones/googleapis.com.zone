@@ -1,0 +1,24 @@
+$TTL 86400
+googleapis.com.    IN      SOA     auth-server-googleapis-com. admin.googleapis.com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-googleapis-com.
+
+ns4.google.com    IN      NS      .
+ns4.google.com    IN      NS      .
+ns3.google.com    IN      NS      .
+ns3.google.com    IN      NS      .
+ns1.google.com    IN      NS      .
+ns1.google.com    IN      NS      .
+ns2.google.com    IN      NS      .
+ns2.google.com    IN      NS      .
+googleapis.com    IN      A       142.250.194.228
+googleapis.com    IN      AAAA    2404:6800:4009:828::2004
+googleapis.com    IN      TXT     "'MS=ms62662176'"
+googleapis.com    IN      TXT     "'v=spf1 -all'"
+googleapis.com    IN      TXT     "'MS=ms95694125'"
+_dmarc.googleapis.com    IN      TXT     "'v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com'"
