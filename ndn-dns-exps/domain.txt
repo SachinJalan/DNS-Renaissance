@@ -1,0 +1,13 @@
+google.com
+googleapis.com
+apple.com
+gstatic.com
+cloudflare.com
+facebook.com
+microsoft.com
+amazonaws.com
+googlevideo.com
+tiktokcdn.com
+fbcdn.net
+whatsapp.net
+youtube.com

@@ -1,0 +1,227 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d root-servers.net -c dns_results/root-servers.net.csv -j dns_results/root-servers.net.json",
+        "date": "2025-04-11 18:53:32.650356",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "198.41.0.4",
+        "domain": "root-servers.net",
+        "mname": "a.root-servers.net",
+        "type": "SOA"
+    },
+    {
+        "address": "2001:503:ba3e::2:30",
+        "domain": "root-servers.net",
+        "mname": "a.root-servers.net",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "170.247.170.2",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "b.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2801:1b8:10::b",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "b.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "198.97.190.53",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "h.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:1::53",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "h.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "198.41.0.4",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "a.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:503:ba3e::2:30",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "a.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "199.7.91.13",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "d.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:2d::d",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "d.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "192.203.230.10",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "e.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:a8::e",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "e.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "193.0.14.129",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "k.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:7fd::1",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "k.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "192.5.5.241",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "f.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:2f::f",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "f.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "192.36.148.17",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "i.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:7fe::53",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "i.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "192.33.4.12",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "c.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:2::c",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "c.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "192.58.128.30",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "j.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:503:c27::2:30",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "j.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "199.7.83.42",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "l.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:9f::42",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "l.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "192.112.36.4",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "g.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:500:12::d0d",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "g.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "202.12.27.33",
+        "domain": "root-servers.net",
+        "recursive": "True",
+        "target": "m.root-servers.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:dc3::35",
+        "domain": "root-servers.net",
+        "recursive": "False",
+        "target": "m.root-servers.net",
+        "type": "NS"
+    }
+]

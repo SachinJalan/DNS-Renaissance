@@ -1,0 +1,15 @@
+Domain,Type,Name,Address,Target,Port,String
+gstatic.com,SOA,ns1.google.com,216.239.32.10,,,
+gstatic.com,SOA,ns1.google.com,2001:4860:4802:32::a,,,
+gstatic.com,NS,ns3.google.com,216.239.36.10,,,
+gstatic.com,NS,ns3.google.com,2001:4860:4802:36::a,,,
+gstatic.com,NS,ns1.google.com,216.239.32.10,,,
+gstatic.com,NS,ns1.google.com,2001:4860:4802:32::a,,,
+gstatic.com,NS,ns2.google.com,216.239.34.10,,,
+gstatic.com,NS,ns2.google.com,2001:4860:4802:34::a,,,
+gstatic.com,NS,ns4.google.com,216.239.38.10,,,
+gstatic.com,NS,ns4.google.com,2001:4860:4802:38::a,,,
+gstatic.com,A,gstatic.com,142.250.76.195,,,
+gstatic.com,AAAA,gstatic.com,2404:6800:4002:81a::2003,,,
+gstatic.com,TXT,gstatic.com,,,,'v=spf1 ?all'
+gstatic.com,TXT,_dmarc.gstatic.com,,,,'v=DMARC1; p=none; rua=mailto:mailauth-reports@google.com'

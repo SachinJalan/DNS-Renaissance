@@ -1,0 +1,357 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d microsoft.com -c dns_results/microsoft.com.csv -j dns_results/microsoft.com.json",
+        "date": "2025-04-11 18:56:01.130277",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "150.171.10.39",
+        "domain": "microsoft.com",
+        "mname": "ns1-39.azure-dns.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2603:1061:0:10::27",
+        "domain": "microsoft.com",
+        "mname": "ns1-39.azure-dns.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "13.107.222.39",
+        "domain": "microsoft.com",
+        "recursive": "True",
+        "target": "ns3-39.azure-dns.org",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a01:111:4000:10::27",
+        "domain": "microsoft.com",
+        "recursive": "False",
+        "target": "ns3-39.azure-dns.org",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "13.107.206.39",
+        "domain": "microsoft.com",
+        "recursive": "True",
+        "target": "ns4-39.azure-dns.info",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2620:1ec:bda:10::27",
+        "domain": "microsoft.com",
+        "recursive": "False",
+        "target": "ns4-39.azure-dns.info",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "150.171.16.39",
+        "domain": "microsoft.com",
+        "recursive": "True",
+        "target": "ns2-39.azure-dns.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2620:1ec:8ec:10::27",
+        "domain": "microsoft.com",
+        "recursive": "False",
+        "target": "ns2-39.azure-dns.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "150.171.10.39",
+        "domain": "microsoft.com",
+        "recursive": "True",
+        "target": "ns1-39.azure-dns.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2603:1061:0:10::27",
+        "domain": "microsoft.com",
+        "recursive": "False",
+        "target": "ns1-39.azure-dns.com",
+        "type": "NS"
+    },
+    {
+        "address": "52.101.11.13",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "52.101.9.26",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "52.101.41.180",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "52.101.42.14",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "2a01:111:f403:c902::6",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "2a01:111:f403:c902::3",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "2a01:111:f403:c803::",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "2a01:111:f403:f805::1",
+        "domain": "microsoft.com",
+        "exchange": "microsoft-com.mail.protection.outlook.com",
+        "type": "MX"
+    },
+    {
+        "address": "13.107.246.59",
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "type": "A"
+    },
+    {
+        "address": "2603:1030:20e:3::23c",
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "type": "AAAA"
+    },
+    {
+        "address": "2603:1010:3:3::5b",
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "type": "AAAA"
+    },
+    {
+        "address": "2603:1020:201:10::10f",
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "type": "AAAA"
+    },
+    {
+        "address": "2603:1030:c02:8::14",
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "type": "AAAA"
+    },
+    {
+        "address": "2603:1030:b:3::152",
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=3uc1cf82cpv750lzk70v9bvf2",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=QDa792dLCZhvaAOOCe2Hz6WTzmTssOp1snABhxWibhMx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "fg2t0gov9424p2tdcuo94goe9j",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "facebook-domain-verification=fwzwhbbzwmg5fzgotc2go51olc3566",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=ZGFU0tlXPekPusNHPo5QQQWpVf0gic0xpuKroNy3NQEx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "t7sebee51jrj7vm932k531hipa",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=6358r1b7e13hox60tl1uagv14",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "ms-domain-verification=25524f4b-1476-489c-a086-30f4c5016ecc",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "google-site-verification=pjPOauSPcrfXOZS9jnPPa5axowcHGCDAl1_86dCqFpk",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=wbU64GRacxVEQxwcLSQnx0zisXLYzgUbfvsufIqO9ZUx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=j2qHWq9BHdaa3ZXZH8x64daJZxEWsFa0dxDeilxDoYYx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "google-site-verification=M--CVfn_YwsV-2FGbCp_HFaEj23BmT0cTF4l8hXgpvM",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "linear-domain-verification=iuq6saifcnbe",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=PNcDqkW71x8VOUhcE96aGM4l5PYX1gnlRl6ieXUl5eMx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "google-site-verification=uhh5_jbxpcQgnb-A7gDIjlrr5Ef34lA2t2_BAveYpnk",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=3l6dste9txazu0Qd2zu4135PUB4E35txLxyzJxjkPbsx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "google-site-verification=mEAmcTy1e8jIB9W6ENPk2GDg9hjuNytQQRGlK0hPm0c",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "v=spf1 include:_spf-a.microsoft.com include:_spf-b.microsoft.com include:_spf-c.microsoft.com include:_spf-ssg-a.msft.net include:spf-a.hotmail.com include:_spf1-meo.microsoft.com -all",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "MS=ms79629062",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "google-site-verification=GfDnTUdATPsK1230J0mXbfsYw-3A9BVMVaKSd4DcKgI",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=Fu49WtSTeClkHtK7S14227RIVpGwwGrzEsO6RVs1I2Ax",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "google-site-verification=uFg3wr5PWsK8lV029RoXXBBUW0_E6qf1WEWVHhetkOY",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "workplace-domain-verification=lK0QDLk73xymCYMKUXNpfKAT8TY5Mx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=JlXV17lfZjyvWxNje1qiP390ACSKzTxo5mGqZ3V2BmYx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "hubspot-developer-verification=OTQ5NGIwYWEtODNmZi00YWE1LTkyNmQtNDhjMDMxY2JjNDAx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "d365mktkey=SxDf1EZxLvMwx6eEZUxzjFFgHoapF8DvtWEUjwq7ZTwx",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "atlassian-domain-verification=xvoaqRfxSg3PnlVnR4xCSOlKyw1Aln0MMxRiKXnwWroFG7vI76TUC8xYb03MwMXv",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "microsoft.com",
+        "strings": "docusign=d5a3737c-c23c-4bd0-9095-d2ff621f2840",
+        "type": "TXT"
+    },
+    {
+        "domain": "microsoft.com",
+        "name": "_dmarc.microsoft.com",
+        "strings": "v=DMARC1; p=reject; pct=100; rua=mailto:itex-rua@microsoft.com; ruf=mailto:itex-ruf@microsoft.com; fo=1",
+        "type": "TXT"
+    },
+    {
+        "address": "131.107.1.47",
+        "domain": "microsoft.com",
+        "name": "_xmpp-server._tcp.microsoft.com",
+        "port": "5269",
+        "target": "sipdog3.microsoft.com",
+        "type": "SRV"
+    },
+    {
+        "address": "52.113.102.64",
+        "domain": "microsoft.com",
+        "name": "_sipfederationtls._tcp.microsoft.com",
+        "port": "5061",
+        "target": "sipfed.online.lync.com",
+        "type": "SRV"
+    }
+]

@@ -1,0 +1,173 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d youtube.com -c dns_results/youtube.com.csv -j dns_results/youtube.com.json",
+        "date": "2025-04-11 18:58:04.154015",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "216.239.32.10",
+        "domain": "youtube.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2001:4860:4802:32::a",
+        "domain": "youtube.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "216.239.32.10",
+        "domain": "youtube.com",
+        "recursive": "True",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:32::a",
+        "domain": "youtube.com",
+        "recursive": "False",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.34.10",
+        "domain": "youtube.com",
+        "recursive": "True",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:34::a",
+        "domain": "youtube.com",
+        "recursive": "False",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.36.10",
+        "domain": "youtube.com",
+        "recursive": "True",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:36::a",
+        "domain": "youtube.com",
+        "recursive": "False",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.38.10",
+        "domain": "youtube.com",
+        "recursive": "True",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:38::a",
+        "domain": "youtube.com",
+        "recursive": "False",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "address": "74.125.130.26",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "172.253.118.26",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "74.125.200.27",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "74.125.130.27",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "74.125.200.26",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "2404:6800:4003:c00::1b",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "2404:6800:4003:c00::1a",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "2404:6800:4003:c05::1b",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "2404:6800:4003:c01::1a",
+        "domain": "youtube.com",
+        "exchange": "smtp.google.com",
+        "type": "MX"
+    },
+    {
+        "address": "142.251.42.78",
+        "domain": "youtube.com",
+        "name": "youtube.com",
+        "type": "A"
+    },
+    {
+        "address": "2404:6800:4009:81e::200e",
+        "domain": "youtube.com",
+        "name": "youtube.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "youtube.com",
+        "name": "youtube.com",
+        "strings": "google-site-verification=QtQWEwHWM8tHiJ4s-jJWzEQrD_fF3luPnpzNDH-Nw-w",
+        "type": "TXT"
+    },
+    {
+        "domain": "youtube.com",
+        "name": "youtube.com",
+        "strings": "facebook-domain-verification=64jdes7le4h7e7lfpi22rijygx58j1",
+        "type": "TXT"
+    },
+    {
+        "domain": "youtube.com",
+        "name": "youtube.com",
+        "strings": "v=spf1 include:google.com mx -all",
+        "type": "TXT"
+    },
+    {
+        "domain": "youtube.com",
+        "name": "_dmarc.youtube.com",
+        "strings": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+        "type": "TXT"
+    }
+]

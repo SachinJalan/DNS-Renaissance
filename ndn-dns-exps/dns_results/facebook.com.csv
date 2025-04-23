@@ -1,0 +1,21 @@
+Domain,Type,Name,Address,Target,Port,String
+facebook.com,SOA,a.ns.facebook.com,129.134.30.12,,,
+facebook.com,SOA,a.ns.facebook.com,2a03:2880:f0fc:c:face:b00c:0:35,,,
+facebook.com,NS,c.ns.facebook.com,185.89.218.12,,,
+facebook.com,NS,c.ns.facebook.com,2a03:2880:f1fc:c:face:b00c:0:35,,,
+facebook.com,NS,d.ns.facebook.com,185.89.219.12,,,
+facebook.com,NS,d.ns.facebook.com,2a03:2880:f1fd:c:face:b00c:0:35,,,
+facebook.com,NS,a.ns.facebook.com,129.134.30.12,,,
+facebook.com,NS,a.ns.facebook.com,2a03:2880:f0fc:c:face:b00c:0:35,,,
+facebook.com,NS,b.ns.facebook.com,129.134.31.12,,,
+facebook.com,NS,b.ns.facebook.com,2a03:2880:f0fd:c:face:b00c:0:35,,,
+facebook.com,MX,smtpin.vvv.facebook.com,69.171.251.251,,,
+facebook.com,MX,smtpin.vvv.facebook.com,2a03:2880:ff:fffd:face:b00c:0:686e,,,
+facebook.com,A,facebook.com,57.144.176.1,,,
+facebook.com,AAAA,facebook.com,2a03:2880:f358:1:face:b00c:0:25de,,,
+facebook.com,TXT,facebook.com,,,,'v=spf1 redirect=_spf.facebook.com'
+facebook.com,TXT,facebook.com,,,,'google-site-verification=wdH5DTJTc9AYNwVunSVFeK0hYDGUIEOGb-RReU6pJlY'
+facebook.com,TXT,facebook.com,,,,'google-site-verification=sK6uY9x7eaMoEMfn3OILqwTFYgaNp4llmguKI-C3_iA'
+facebook.com,TXT,facebook.com,,,,'google-site-verification=A2WZWCNQHrGV_TWwKh6KHY90tY0SHZo_RnyMJoDaG0s'
+facebook.com,TXT,facebook.com,,,,'zoom-domain-verification=4b2ef4e1-6dee-4483-9869-9bef353fd147'
+facebook.com,TXT,_dmarc.facebook.com,,,,'v=DMARC1; p=reject; rua=mailto:a@dmarc.facebookmail.com; ruf=mailto:fb-dmarc@datafeeds.phishlabs.com; pct=100'

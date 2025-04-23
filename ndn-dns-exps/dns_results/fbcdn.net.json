@@ -1,0 +1,113 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d fbcdn.net -c dns_results/fbcdn.net.csv -j dns_results/fbcdn.net.json",
+        "date": "2025-04-11 18:57:02.093044",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "129.134.30.12",
+        "domain": "fbcdn.net",
+        "mname": "a.ns.facebook.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2a03:2880:f0fc:c:face:b00c:0:35",
+        "domain": "fbcdn.net",
+        "mname": "a.ns.facebook.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "129.134.31.12",
+        "domain": "fbcdn.net",
+        "recursive": "True",
+        "target": "b.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f0fd:c:face:b00c:0:35",
+        "domain": "fbcdn.net",
+        "recursive": "False",
+        "target": "b.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "185.89.219.12",
+        "domain": "fbcdn.net",
+        "recursive": "True",
+        "target": "d.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f1fd:c:face:b00c:0:35",
+        "domain": "fbcdn.net",
+        "recursive": "False",
+        "target": "d.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "129.134.30.12",
+        "domain": "fbcdn.net",
+        "recursive": "True",
+        "target": "a.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f0fc:c:face:b00c:0:35",
+        "domain": "fbcdn.net",
+        "recursive": "False",
+        "target": "a.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "185.89.218.12",
+        "domain": "fbcdn.net",
+        "recursive": "True",
+        "target": "c.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f1fc:c:face:b00c:0:35",
+        "domain": "fbcdn.net",
+        "recursive": "False",
+        "target": "c.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "address": "157.240.7.35",
+        "domain": "fbcdn.net",
+        "name": "fbcdn.net",
+        "type": "A"
+    },
+    {
+        "address": "2a03:2880:f10c:83:face:b00c:0:25de",
+        "domain": "fbcdn.net",
+        "name": "fbcdn.net",
+        "type": "AAAA"
+    },
+    {
+        "domain": "fbcdn.net",
+        "name": "fbcdn.net",
+        "strings": "google-site-verification=fK7K3F-hT-Pre47WNaVLRyk-_nC0Kc7K-IzagA5gPEw",
+        "type": "TXT"
+    },
+    {
+        "domain": "fbcdn.net",
+        "name": "fbcdn.net",
+        "strings": "v=spf1 a ~all",
+        "type": "TXT"
+    },
+    {
+        "domain": "fbcdn.net",
+        "name": "_dmarc.fbcdn.net",
+        "strings": "v=DMARC1; p=none; sp=none; rua=mailto:a@dmarc.facebookmail.com",
+        "type": "TXT"
+    }
+]

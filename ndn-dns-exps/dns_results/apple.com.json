@@ -1,0 +1,309 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d apple.com -c dns_results/apple.com.csv -j dns_results/apple.com.json",
+        "date": "2025-04-11 18:54:50.233049",
+        "type": "ScanInfo"
+    },
+    {
+        "Version": "",
+        "address": "17.253.200.1",
+        "domain": "apple.com",
+        "recursive": "True",
+        "target": "a.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2620:149:ae0::53",
+        "domain": "apple.com",
+        "recursive": "False",
+        "target": "a.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "204.26.57.1",
+        "domain": "apple.com",
+        "recursive": "True",
+        "target": "d.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2620:171:801:714::1",
+        "domain": "apple.com",
+        "recursive": "False",
+        "target": "d.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "17.253.207.1",
+        "domain": "apple.com",
+        "recursive": "True",
+        "target": "b.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2620:149:ae7::53",
+        "domain": "apple.com",
+        "recursive": "False",
+        "target": "b.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "204.19.119.1",
+        "domain": "apple.com",
+        "recursive": "True",
+        "target": "c.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2620:171:800:714::1",
+        "domain": "apple.com",
+        "recursive": "False",
+        "target": "c.ns.apple.com",
+        "type": "NS"
+    },
+    {
+        "address": "17.57.170.2",
+        "domain": "apple.com",
+        "exchange": "mx-in.g.apple.com",
+        "type": "MX"
+    },
+    {
+        "address": "17.171.208.6",
+        "domain": "apple.com",
+        "exchange": "mx-in-ma.apple.com",
+        "type": "MX"
+    },
+    {
+        "address": "17.23.14.18",
+        "domain": "apple.com",
+        "exchange": "mx-in-sg.apple.com",
+        "type": "MX"
+    },
+    {
+        "address": "17.57.170.2",
+        "domain": "apple.com",
+        "exchange": "mx-in-vib.apple.com",
+        "type": "MX"
+    },
+    {
+        "address": "17.56.176.6",
+        "domain": "apple.com",
+        "exchange": "mx-in-rn.apple.com",
+        "type": "MX"
+    },
+    {
+        "address": "17.57.165.2",
+        "domain": "apple.com",
+        "exchange": "mx-in-hfd.apple.com",
+        "type": "MX"
+    },
+    {
+        "address": "17.253.144.10",
+        "domain": "apple.com",
+        "name": "apple.com",
+        "type": "A"
+    },
+    {
+        "address": "2620:149:af0::10",
+        "domain": "apple.com",
+        "name": "apple.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "v=spf1 include:_spf.apple.com include:_spf-txn.apple.com ~all",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "yahoo-verification-key=Ay+djyw0qWQgXKWGA/jstjYryTMrKb+PBXI5l8u5/jw=",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "cisco-ci-domain-verification=6f3bfb849796a518061f8e8c4356f687a138502d86db742791685059176547dd",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "atlassian-domain-verification=mLabq99iaT8kquJechF6l31FAYoNUe3WB7tLpLFUiUYVJCse9SKq83hOJzFkwqrh",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "google-site-verification=zBSq1mG5ssu2If-C17UAz_MzSZDcx03MVxmeDwMNc5w",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "miro-verification=2494d255c4c50b1e521650a0659cbf3fa08b0072",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "adobe-idp-site-verification=6bd5e74c-a3a0-4781-b2e1-e95399b5e11c",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "77a4a6de-da14-449c-83c4-85366e0f55f9",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "cerner-client-id=ce3abf18-ee87-43b9-9927-9eb24b4bac4a",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "google-site-verification=L5kkMdiFI8npvb6KlHui84fJaCw5G64DWhaDRIAT4_c",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "google-site-verification=8M6XjQCzydT62jk8HY3VXPAG-nKDllTRV-JpA3-Ktyw",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "apple-domain-verification=X5Jt76bn3Dnmgzjj",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "ValidationTokenValue=77a4a6de-da14-449c-83c4-85366e0f55f9",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "Dynatrace-site-verification=7d881a7c-c13f-4146-9d27-2731459e2509__iqls0105tagglcsaul0m16ibrf",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "facebook-domain-verification=n6cqjfucq6plswmtfbwnbbeu1qiq3v",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "json:eyJ3aHkiOiJUaGlzIGlzIHRvIHRydW5jYXRlIFVEUCByZXNwb25zZXMgZm9yIFRYVCBxdWVyaWVzIHRvIGFwcGxlLmNvbSIsInBhZGRpbmciOiJpZW4wYWVHaGF0aG9oNmhhaHZpZWphaTNlYXkwYWh2YWhjaGFocXVhZWxlZTBZdWw0cGhpZXRoMHNvNXZpZXllZWNvaDRpZThzaGVlcGllVDNwYWVjaGVpVjZqb2h3aWVwaG82In0K",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "cerner-client-id=22dd1d8a-5e8b-4e1e-80ef-39bcdfd42798",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "json:eyJ3aHkiOiJUaGlzIGlzIHRvIHRydW5jYXRlIFVEUCByZXNwb25zZXMgZm9yIFRYVCBxdWVyaWVzIHRvIGFwcGxlLmNvbSIsInBhZGRpbmciOiJxdWFoMGVpamFhNGVlajh0aWVkYWlnaG9jZWljaGFlOGVUb3ppZTVmdTVhaFRoMldlaU00aWsyaHVxdThpZXBoaWVxdW9oc2hlaXBhZWdoOUthZWw3b2NoaWVuZ2llem9lc2g1In0K",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "webexdomainverification.8C462=b728ec3f-dfc9-42f9-92cb-9ba8853cbee8",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "apple.com",
+        "strings": "_khcec23xgc5b2lb981hup1csjb4cdnz",
+        "type": "TXT"
+    },
+    {
+        "domain": "apple.com",
+        "name": "_dmarc.apple.com",
+        "strings": "v=DMARC1; p=quarantine; sp=reject; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com;",
+        "type": "TXT"
+    },
+    {
+        "address": "17.84.86.142",
+        "domain": "apple.com",
+        "name": "_sip._tls.apple.com",
+        "port": "5060",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.140",
+        "domain": "apple.com",
+        "name": "_sip._tls.apple.com",
+        "port": "5060",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.142",
+        "domain": "apple.com",
+        "name": "_sip._udp.apple.com",
+        "port": "5060",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.140",
+        "domain": "apple.com",
+        "name": "_sip._udp.apple.com",
+        "port": "5060",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.142",
+        "domain": "apple.com",
+        "name": "_sip._tcp.apple.com",
+        "port": "5060",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.140",
+        "domain": "apple.com",
+        "name": "_sip._tcp.apple.com",
+        "port": "5060",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.142",
+        "domain": "apple.com",
+        "name": "_sips._tcp.apple.com",
+        "port": "5061",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    },
+    {
+        "address": "17.84.86.140",
+        "domain": "apple.com",
+        "name": "_sips._tcp.apple.com",
+        "port": "5061",
+        "target": "gslb-b2b-ext.v.aaplimg.com",
+        "type": "SRV"
+    }
+]

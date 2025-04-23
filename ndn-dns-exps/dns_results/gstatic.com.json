@@ -1,0 +1,107 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d gstatic.com -c dns_results/gstatic.com.csv -j dns_results/gstatic.com.json",
+        "date": "2025-04-11 18:55:02.918250",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "216.239.32.10",
+        "domain": "gstatic.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2001:4860:4802:32::a",
+        "domain": "gstatic.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "216.239.36.10",
+        "domain": "gstatic.com",
+        "recursive": "True",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:36::a",
+        "domain": "gstatic.com",
+        "recursive": "False",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.32.10",
+        "domain": "gstatic.com",
+        "recursive": "True",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:32::a",
+        "domain": "gstatic.com",
+        "recursive": "False",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.34.10",
+        "domain": "gstatic.com",
+        "recursive": "True",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:34::a",
+        "domain": "gstatic.com",
+        "recursive": "False",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.38.10",
+        "domain": "gstatic.com",
+        "recursive": "True",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:38::a",
+        "domain": "gstatic.com",
+        "recursive": "False",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "address": "142.250.76.195",
+        "domain": "gstatic.com",
+        "name": "gstatic.com",
+        "type": "A"
+    },
+    {
+        "address": "2404:6800:4002:81a::2003",
+        "domain": "gstatic.com",
+        "name": "gstatic.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "gstatic.com",
+        "name": "gstatic.com",
+        "strings": "v=spf1 ?all",
+        "type": "TXT"
+    },
+    {
+        "domain": "gstatic.com",
+        "name": "_dmarc.gstatic.com",
+        "strings": "v=DMARC1; p=none; rua=mailto:mailauth-reports@google.com",
+        "type": "TXT"
+    }
+]

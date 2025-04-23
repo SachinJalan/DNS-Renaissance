@@ -1,0 +1,119 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d googleapis.com -c dns_results/googleapis.com.csv -j dns_results/googleapis.com.json",
+        "date": "2025-04-11 18:54:36.168978",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "216.239.32.10",
+        "domain": "googleapis.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2001:4860:4802:32::a",
+        "domain": "googleapis.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "216.239.34.10",
+        "domain": "googleapis.com",
+        "recursive": "True",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:34::a",
+        "domain": "googleapis.com",
+        "recursive": "False",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.36.10",
+        "domain": "googleapis.com",
+        "recursive": "True",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:36::a",
+        "domain": "googleapis.com",
+        "recursive": "False",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.38.10",
+        "domain": "googleapis.com",
+        "recursive": "True",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:38::a",
+        "domain": "googleapis.com",
+        "recursive": "False",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.32.10",
+        "domain": "googleapis.com",
+        "recursive": "True",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:32::a",
+        "domain": "googleapis.com",
+        "recursive": "False",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "address": "142.250.192.36",
+        "domain": "googleapis.com",
+        "name": "googleapis.com",
+        "type": "A"
+    },
+    {
+        "address": "2404:6800:4009:828::2004",
+        "domain": "googleapis.com",
+        "name": "googleapis.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "googleapis.com",
+        "name": "googleapis.com",
+        "strings": "v=spf1 -all",
+        "type": "TXT"
+    },
+    {
+        "domain": "googleapis.com",
+        "name": "googleapis.com",
+        "strings": "MS=ms95694125",
+        "type": "TXT"
+    },
+    {
+        "domain": "googleapis.com",
+        "name": "googleapis.com",
+        "strings": "MS=ms62662176",
+        "type": "TXT"
+    },
+    {
+        "domain": "googleapis.com",
+        "name": "_dmarc.googleapis.com",
+        "strings": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+        "type": "TXT"
+    }
+]

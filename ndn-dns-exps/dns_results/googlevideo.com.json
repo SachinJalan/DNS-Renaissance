@@ -1,0 +1,107 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d googlevideo.com -c dns_results/googlevideo.com.csv -j dns_results/googlevideo.com.json",
+        "date": "2025-04-11 18:56:27.390595",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "216.239.32.10",
+        "domain": "googlevideo.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2001:4860:4802:32::a",
+        "domain": "googlevideo.com",
+        "mname": "ns1.google.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "216.239.38.10",
+        "domain": "googlevideo.com",
+        "recursive": "True",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:38::a",
+        "domain": "googlevideo.com",
+        "recursive": "False",
+        "target": "ns4.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.32.10",
+        "domain": "googlevideo.com",
+        "recursive": "True",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:32::a",
+        "domain": "googlevideo.com",
+        "recursive": "False",
+        "target": "ns1.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.34.10",
+        "domain": "googlevideo.com",
+        "recursive": "True",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:34::a",
+        "domain": "googlevideo.com",
+        "recursive": "False",
+        "target": "ns2.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "216.239.36.10",
+        "domain": "googlevideo.com",
+        "recursive": "True",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2001:4860:4802:36::a",
+        "domain": "googlevideo.com",
+        "recursive": "False",
+        "target": "ns3.google.com",
+        "type": "NS"
+    },
+    {
+        "address": "142.250.192.100",
+        "domain": "googlevideo.com",
+        "name": "googlevideo.com",
+        "type": "A"
+    },
+    {
+        "address": "2404:6800:4002:82b::2004",
+        "domain": "googlevideo.com",
+        "name": "googlevideo.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "googlevideo.com",
+        "name": "googlevideo.com",
+        "strings": "v=spf1 ?all",
+        "type": "TXT"
+    },
+    {
+        "domain": "googlevideo.com",
+        "name": "_dmarc.googlevideo.com",
+        "strings": "v=DMARC1; p=none; rua=mailto:mailauth-reports@google.com",
+        "type": "TXT"
+    }
+]

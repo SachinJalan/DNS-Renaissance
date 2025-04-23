@@ -1,0 +1,82 @@
+Starting DNS reconnaissance at Friday 11 April 2025 06:53:32 PM IST
+Results will be saved in the dns_results directory
+----------------------------------------
+Processing domain: root-servers.net
+Running: ./dnsrecon.py -d root-servers.net -c dns_results/root-servers.net.csv -j dns_results/root-servers.net.json
+✓ Completed scan for root-servers.net.
+  - CSV results saved to dns_results/root-servers.net.csv
+  - JSON results saved to dns_results/root-servers.net.json
+----------------------------------------
+Processing domain: google.com
+Running: ./dnsrecon.py -d google.com -c dns_results/google.com.csv -j dns_results/google.com.json
+✓ Completed scan for google.com.
+  - CSV results saved to dns_results/google.com.csv
+  - JSON results saved to dns_results/google.com.json
+----------------------------------------
+Processing domain: googleapis.com
+Running: ./dnsrecon.py -d googleapis.com -c dns_results/googleapis.com.csv -j dns_results/googleapis.com.json
+✓ Completed scan for googleapis.com.
+  - CSV results saved to dns_results/googleapis.com.csv
+  - JSON results saved to dns_results/googleapis.com.json
+----------------------------------------
+Processing domain: apple.com
+Running: ./dnsrecon.py -d apple.com -c dns_results/apple.com.csv -j dns_results/apple.com.json
+✓ Completed scan for apple.com.
+  - CSV results saved to dns_results/apple.com.csv
+  - JSON results saved to dns_results/apple.com.json
+----------------------------------------
+Processing domain: gstatic.com
+Running: ./dnsrecon.py -d gstatic.com -c dns_results/gstatic.com.csv -j dns_results/gstatic.com.json
+✓ Completed scan for gstatic.com.
+  - CSV results saved to dns_results/gstatic.com.csv
+  - JSON results saved to dns_results/gstatic.com.json
+----------------------------------------
+Processing domain: cloudflare.com
+Running: ./dnsrecon.py -d cloudflare.com -c dns_results/cloudflare.com.csv -j dns_results/cloudflare.com.json
+✓ Completed scan for cloudflare.com.
+  - CSV results saved to dns_results/cloudflare.com.csv
+  - JSON results saved to dns_results/cloudflare.com.json
+----------------------------------------
+Processing domain: facebook.com
+Running: ./dnsrecon.py -d facebook.com -c dns_results/facebook.com.csv -j dns_results/facebook.com.json
+✓ Completed scan for facebook.com.
+  - CSV results saved to dns_results/facebook.com.csv
+  - JSON results saved to dns_results/facebook.com.json
+----------------------------------------
+Processing domain: microsoft.com
+Running: ./dnsrecon.py -d microsoft.com -c dns_results/microsoft.com.csv -j dns_results/microsoft.com.json
+✓ Completed scan for microsoft.com.
+  - CSV results saved to dns_results/microsoft.com.csv
+  - JSON results saved to dns_results/microsoft.com.json
+----------------------------------------
+Processing domain: amazonaws.com
+Running: ./dnsrecon.py -d amazonaws.com -c dns_results/amazonaws.com.csv -j dns_results/amazonaws.com.json
+✓ Completed scan for amazonaws.com.
+  - CSV results saved to dns_results/amazonaws.com.csv
+  - JSON results saved to dns_results/amazonaws.com.json
+----------------------------------------
+Processing domain: googlevideo.com
+Running: ./dnsrecon.py -d googlevideo.com -c dns_results/googlevideo.com.csv -j dns_results/googlevideo.com.json
+✓ Completed scan for googlevideo.com.
+  - CSV results saved to dns_results/googlevideo.com.csv
+  - JSON results saved to dns_results/googlevideo.com.json
+----------------------------------------
+Processing domain: tiktokcdn.com
+Running: ./dnsrecon.py -d tiktokcdn.com -c dns_results/tiktokcdn.com.csv -j dns_results/tiktokcdn.com.json
+✓ Completed scan for tiktokcdn.com.
+  - CSV results saved to dns_results/tiktokcdn.com.csv
+  - JSON results saved to dns_results/tiktokcdn.com.json
+----------------------------------------
+Processing domain: fbcdn.net
+Running: ./dnsrecon.py -d fbcdn.net -c dns_results/fbcdn.net.csv -j dns_results/fbcdn.net.json
+✓ Completed scan for fbcdn.net.
+  - CSV results saved to dns_results/fbcdn.net.csv
+  - JSON results saved to dns_results/fbcdn.net.json
+----------------------------------------
+Processing domain: whatsapp.net
+Running: ./dnsrecon.py -d whatsapp.net -c dns_results/whatsapp.net.csv -j dns_results/whatsapp.net.json
+✓ Completed scan for whatsapp.net.
+  - CSV results saved to dns_results/whatsapp.net.csv
+  - JSON results saved to dns_results/whatsapp.net.json
+----------------------------------------
+All scans completed at Friday 11 April 2025 06:57:27 PM IST

@@ -1,0 +1,371 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d cloudflare.com -c dns_results/cloudflare.com.csv -j dns_results/cloudflare.com.json",
+        "date": "2025-04-11 18:55:16.765958",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "162.159.7.226",
+        "domain": "cloudflare.com",
+        "mname": "ns3.cloudflare.com",
+        "type": "SOA"
+    },
+    {
+        "address": "162.159.0.33",
+        "domain": "cloudflare.com",
+        "mname": "ns3.cloudflare.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2400:cb00:2049:1::a29f:21",
+        "domain": "cloudflare.com",
+        "mname": "ns3.cloudflare.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2400:cb00:2049:1::a29f:7e2",
+        "domain": "cloudflare.com",
+        "mname": "ns3.cloudflare.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "162.159.1.33",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns4.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.8.55",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns4.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:121",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns4.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:837",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns4.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.6.6",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns7.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.4.8",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns7.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:408",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns7.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:606",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns7.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.5.6",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns6.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.3.11",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns6.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:506",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns6.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:30b",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns6.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.7.226",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns3.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.0.33",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns3.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:7e2",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns3.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:21",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns3.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.9.55",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns5.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "162.159.2.9",
+        "domain": "cloudflare.com",
+        "recursive": "True",
+        "target": "ns5.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:209",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns5.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2400:cb00:2049:1::a29f:937",
+        "domain": "cloudflare.com",
+        "recursive": "False",
+        "target": "ns5.cloudflare.com",
+        "type": "NS"
+    },
+    {
+        "address": "172.65.242.201",
+        "domain": "cloudflare.com",
+        "exchange": "mailstream-central.mxrecord.mx",
+        "type": "MX"
+    },
+    {
+        "address": "172.65.237.73",
+        "domain": "cloudflare.com",
+        "exchange": "mailstream-canary.mxrecord.io",
+        "type": "MX"
+    },
+    {
+        "address": "172.65.213.128",
+        "domain": "cloudflare.com",
+        "exchange": "mailstream-east.mxrecord.io",
+        "type": "MX"
+    },
+    {
+        "address": "172.65.220.210",
+        "domain": "cloudflare.com",
+        "exchange": "mailstream-west.mxrecord.io",
+        "type": "MX"
+    },
+    {
+        "address": "104.16.132.229",
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "type": "A"
+    },
+    {
+        "address": "104.16.133.229",
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "type": "A"
+    },
+    {
+        "address": "2606:4700::6810:85e5",
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "type": "AAAA"
+    },
+    {
+        "address": "2606:4700::6810:84e5",
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "miro-verification=bdd7dfa0a49adfb43ad6ddfaf797633246c07356",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "asv=894f6d1f9f83bcf44e4b1bc40bc1c4aa",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "google-site-verification=C7thfNeXVahkVhniiqTI1iSVnElKR_kBBtnEHkeGDlo",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "v=spf1 ip4:199.15.212.0/22 ip4:173.245.48.0/20 include:_spf.google.com include:spf1.mcsv.net include:spf.mandrillapp.com include:mail.zendesk.com include:stspg-customer.com include:_spf.salesforce.com -all",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "docker-verification=c578e21c-34fb-4474-9b90-d55ee4cba10c",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "onetrust-domain-verification=bd5cd08a1e9644799fdb98ed7d60c9cb",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "stripe-verification=bf1a94e6b16ace2502a4a7fff574a25c8a45291054960c883c59be39d1788db9",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "liveramp-site-verification=EhH1MqgwbndTWl1AN64hOTKz7hc1s80yUpchLbgpfY0",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "google-site-verification=ZdlQZLBBAPkxeFTCM1rpiB_ibtGff_JF5KllNKwDR9I",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "facebook-domain-verification=h9mm6zopj6p2po54woa16m5bskm6oo",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "status-page-domain-verification=r14frwljwbxs",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "atlassian-domain-verification=WxxKyN9aLnjEsoOjUYI6T0bb5vcqmKzaIkC9Rx2QkNb751G3LL/cus8/ZDOgh8xB",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "stripe-verification=5096d01ff2cf194285dd51cae18f24fa9c26dc928cebac3636d462b4c6925623",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "ZOOM_verify_7LFBvOO9SIigypFG2xRlMA",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "creatopy-domain-verification=97d2ca50-9b6f-4a21-9bdb-fbb630e4cec7",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "cisco-ci-domain-verification=27e926884619804ef987ae4aa1c4168f6b152ada84f4c8bfc74eb2bd2912ad72",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "drift-domain-verification=f037808a26ae8b25bc13b1f1f2b4c3e0f78c03e67f24cefdd4ec520efa8e719f",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "_neqmkgaq1lq9it5s8qmetrhbnu121wb",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "logmein-verification-code=b3433c86-3823-4808-8a7e-58042469f654",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "MS=ms70274184",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "cloudflare.com",
+        "strings": "apple-domain-verification=DNnWJoArJobFJKhJ",
+        "type": "TXT"
+    },
+    {
+        "domain": "cloudflare.com",
+        "name": "_dmarc.cloudflare.com",
+        "strings": "v=DMARC1; p=reject; pct=100; rua=mailto:rua@cloudflare.com,mailto:cloudflare@dmarc.area1reports.com; ruf=mailto:cloudflare@dmarc.area1reports.com",
+        "type": "TXT"
+    }
+]

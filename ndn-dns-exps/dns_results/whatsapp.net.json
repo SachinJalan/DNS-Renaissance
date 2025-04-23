@@ -1,0 +1,107 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d whatsapp.net -c dns_results/whatsapp.net.csv -j dns_results/whatsapp.net.json",
+        "date": "2025-04-11 18:57:14.988269",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "129.134.30.12",
+        "domain": "whatsapp.net",
+        "mname": "a.ns.whatsapp.net",
+        "type": "SOA"
+    },
+    {
+        "address": "2a03:2880:f0fc:c:face:b00c:0:35",
+        "domain": "whatsapp.net",
+        "mname": "a.ns.whatsapp.net",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "185.89.218.12",
+        "domain": "whatsapp.net",
+        "recursive": "True",
+        "target": "c.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f1fc:c:face:b00c:0:35",
+        "domain": "whatsapp.net",
+        "recursive": "False",
+        "target": "c.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "129.134.30.12",
+        "domain": "whatsapp.net",
+        "recursive": "True",
+        "target": "a.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f0fc:c:face:b00c:0:35",
+        "domain": "whatsapp.net",
+        "recursive": "False",
+        "target": "a.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "185.89.219.12",
+        "domain": "whatsapp.net",
+        "recursive": "True",
+        "target": "d.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f1fd:c:face:b00c:0:35",
+        "domain": "whatsapp.net",
+        "recursive": "False",
+        "target": "d.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "129.134.31.12",
+        "domain": "whatsapp.net",
+        "recursive": "True",
+        "target": "b.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f0fd:c:face:b00c:0:35",
+        "domain": "whatsapp.net",
+        "recursive": "False",
+        "target": "b.ns.whatsapp.net",
+        "type": "NS"
+    },
+    {
+        "address": "57.144.177.32",
+        "domain": "whatsapp.net",
+        "name": "whatsapp.net",
+        "type": "A"
+    },
+    {
+        "address": "2a03:2880:f358:120:face:b00c:0:167",
+        "domain": "whatsapp.net",
+        "name": "whatsapp.net",
+        "type": "AAAA"
+    },
+    {
+        "domain": "whatsapp.net",
+        "name": "whatsapp.net",
+        "strings": "google-site-verification=K67eUkrXbL-MM2pcYlUhcne9l4-oGJCzJHRwFpTv5fE",
+        "type": "TXT"
+    },
+    {
+        "domain": "whatsapp.net",
+        "name": "whatsapp.net",
+        "strings": "v=spf1 -all",
+        "type": "TXT"
+    }
+]

@@ -1,0 +1,143 @@
+[
+    {
+        "arguments": "./dnsrecon.py -d facebook.com -c dns_results/facebook.com.csv -j dns_results/facebook.com.json",
+        "date": "2025-04-11 18:55:48.051363",
+        "type": "ScanInfo"
+    },
+    {
+        "address": "129.134.30.12",
+        "domain": "facebook.com",
+        "mname": "a.ns.facebook.com",
+        "type": "SOA"
+    },
+    {
+        "address": "2a03:2880:f0fc:c:face:b00c:0:35",
+        "domain": "facebook.com",
+        "mname": "a.ns.facebook.com",
+        "type": "SOA"
+    },
+    {
+        "Version": "",
+        "address": "185.89.218.12",
+        "domain": "facebook.com",
+        "recursive": "True",
+        "target": "c.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f1fc:c:face:b00c:0:35",
+        "domain": "facebook.com",
+        "recursive": "False",
+        "target": "c.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "185.89.219.12",
+        "domain": "facebook.com",
+        "recursive": "True",
+        "target": "d.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f1fd:c:face:b00c:0:35",
+        "domain": "facebook.com",
+        "recursive": "False",
+        "target": "d.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "129.134.30.12",
+        "domain": "facebook.com",
+        "recursive": "True",
+        "target": "a.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f0fc:c:face:b00c:0:35",
+        "domain": "facebook.com",
+        "recursive": "False",
+        "target": "a.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "129.134.31.12",
+        "domain": "facebook.com",
+        "recursive": "True",
+        "target": "b.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "Version": "",
+        "address": "2a03:2880:f0fd:c:face:b00c:0:35",
+        "domain": "facebook.com",
+        "recursive": "False",
+        "target": "b.ns.facebook.com",
+        "type": "NS"
+    },
+    {
+        "address": "69.171.251.251",
+        "domain": "facebook.com",
+        "exchange": "smtpin.vvv.facebook.com",
+        "type": "MX"
+    },
+    {
+        "address": "2a03:2880:ff:fffd:face:b00c:0:686e",
+        "domain": "facebook.com",
+        "exchange": "smtpin.vvv.facebook.com",
+        "type": "MX"
+    },
+    {
+        "address": "57.144.176.1",
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "type": "A"
+    },
+    {
+        "address": "2a03:2880:f358:1:face:b00c:0:25de",
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "type": "AAAA"
+    },
+    {
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "strings": "v=spf1 redirect=_spf.facebook.com",
+        "type": "TXT"
+    },
+    {
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "strings": "google-site-verification=wdH5DTJTc9AYNwVunSVFeK0hYDGUIEOGb-RReU6pJlY",
+        "type": "TXT"
+    },
+    {
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "strings": "google-site-verification=sK6uY9x7eaMoEMfn3OILqwTFYgaNp4llmguKI-C3_iA",
+        "type": "TXT"
+    },
+    {
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "strings": "google-site-verification=A2WZWCNQHrGV_TWwKh6KHY90tY0SHZo_RnyMJoDaG0s",
+        "type": "TXT"
+    },
+    {
+        "domain": "facebook.com",
+        "name": "facebook.com",
+        "strings": "zoom-domain-verification=4b2ef4e1-6dee-4483-9869-9bef353fd147",
+        "type": "TXT"
+    },
+    {
+        "domain": "facebook.com",
+        "name": "_dmarc.facebook.com",
+        "strings": "v=DMARC1; p=reject; rua=mailto:a@dmarc.facebookmail.com; ruf=mailto:fb-dmarc@datafeeds.phishlabs.com; pct=100",
+        "type": "TXT"
+    }
+]
