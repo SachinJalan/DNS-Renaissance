@@ -1,0 +1,55 @@
+$TTL 86400
+apple.com.    IN      SOA     auth-server-apple-com. admin.apple.com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-apple-com.
+
+d.ns.apple.com    IN      NS      .
+d.ns.apple.com    IN      NS      .
+a.ns.apple.com    IN      NS      .
+a.ns.apple.com    IN      NS      .
+b.ns.apple.com    IN      NS      .
+b.ns.apple.com    IN      NS      .
+c.ns.apple.com    IN      NS      .
+c.ns.apple.com    IN      NS      .
+mx-in-sg.apple.com    IN      MX      10 .
+mx-in-rn.apple.com    IN      MX      10 .
+mx-in-vib.apple.com    IN      MX      10 .
+mx-in-hfd.apple.com    IN      MX      10 .
+mx-in-ma.apple.com    IN      MX      10 .
+mx-in.g.apple.com    IN      MX      10 .
+apple.com    IN      A       17.253.144.10
+apple.com    IN      AAAA    2620:149:af0::10
+apple.com    IN      TXT     "'ValidationTokenValue=77a4a6de-da14-449c-83c4-85366e0f55f9'"
+apple.com    IN      TXT     "'json:eyJ3aHkiOiJUaGlzIGlzIHRvIHRydW5jYXRlIFVEUCByZXNwb25zZXMgZm9yIFRYVCBxdWVyaWVzIHRvIGFwcGxlLmNvbSIsInBhZGRpbmciOiJxdWFoMGVpamFhNGVlajh0aWVkYWlnaG9jZWljaGFlOGVUb3ppZTVmdTVhaFRoMldlaU00aWsyaHVxdThpZXBoaWVxdW9oc2hlaXBhZWdoOUthZWw3b2NoaWVuZ2llem9lc2g1In0K'"
+apple.com    IN      TXT     "'miro-verification=2494d255c4c50b1e521650a0659cbf3fa08b0072'"
+apple.com    IN      TXT     "'adobe-idp-site-verification=6bd5e74c-a3a0-4781-b2e1-e95399b5e11c'"
+apple.com    IN      TXT     "'yahoo-verification-key=Ay+djyw0qWQgXKWGA/jstjYryTMrKb+PBXI5l8u5/jw='"
+apple.com    IN      TXT     "'atlassian-domain-verification=mLabq99iaT8kquJechF6l31FAYoNUe3WB7tLpLFUiUYVJCse9SKq83hOJzFkwqrh'"
+apple.com    IN      TXT     "'Dynatrace-site-verification=7d881a7c-c13f-4146-9d27-2731459e2509__iqls0105tagglcsaul0m16ibrf'"
+apple.com    IN      TXT     "'facebook-domain-verification=n6cqjfucq6plswmtfbwnbbeu1qiq3v'"
+apple.com    IN      TXT     "'cerner-client-id=ce3abf18-ee87-43b9-9927-9eb24b4bac4a'"
+apple.com    IN      TXT     "'apple-domain-verification=X5Jt76bn3Dnmgzjj'"
+apple.com    IN      TXT     "'cisco-ci-domain-verification=6f3bfb849796a518061f8e8c4356f687a138502d86db742791685059176547dd'"
+apple.com    IN      TXT     "'json:eyJ3aHkiOiJUaGlzIGlzIHRvIHRydW5jYXRlIFVEUCByZXNwb25zZXMgZm9yIFRYVCBxdWVyaWVzIHRvIGFwcGxlLmNvbSIsInBhZGRpbmciOiJpZW4wYWVHaGF0aG9oNmhhaHZpZWphaTNlYXkwYWh2YWhjaGFocXVhZWxlZTBZdWw0cGhpZXRoMHNvNXZpZXllZWNvaDRpZThzaGVlcGllVDNwYWVjaGVpVjZqb2h3aWVwaG82In0K'"
+apple.com    IN      TXT     "'cerner-client-id=22dd1d8a-5e8b-4e1e-80ef-39bcdfd42798'"
+apple.com    IN      TXT     "'google-site-verification=L5kkMdiFI8npvb6KlHui84fJaCw5G64DWhaDRIAT4_c'"
+apple.com    IN      TXT     "'google-site-verification=zBSq1mG5ssu2If-C17UAz_MzSZDcx03MVxmeDwMNc5w'"
+apple.com    IN      TXT     "'webexdomainverification.8C462=b728ec3f-dfc9-42f9-92cb-9ba8853cbee8'"
+apple.com    IN      TXT     "'google-site-verification=8M6XjQCzydT62jk8HY3VXPAG-nKDllTRV-JpA3-Ktyw'"
+apple.com    IN      TXT     "'77a4a6de-da14-449c-83c4-85366e0f55f9'"
+apple.com    IN      TXT     "'_khcec23xgc5b2lb981hup1csjb4cdnz'"
+apple.com    IN      TXT     "'v=spf1 include:_spf.apple.com include:_spf-txn.apple.com ~all'"
+_dmarc.apple.com    IN      TXT     "'v=DMARC1; p=quarantine; sp=reject; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com;'"
+_sips._tcp.apple.com    IN      SRV   17.84.86.142
+_sips._tcp.apple.com    IN      SRV   17.84.86.140
+_sip._tcp.apple.com    IN      SRV   17.84.86.142
+_sip._tcp.apple.com    IN      SRV   17.84.86.140
+_sip._udp.apple.com    IN      SRV   17.84.86.142
+_sip._udp.apple.com    IN      SRV   17.84.86.140
+_sip._tls.apple.com    IN      SRV   17.84.86.140
+_sip._tls.apple.com    IN      SRV   17.84.86.142

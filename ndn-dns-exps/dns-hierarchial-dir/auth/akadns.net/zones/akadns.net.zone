@@ -1,0 +1,30 @@
+$TTL 86400
+akadns.net.    IN      SOA     auth-server-akadns-net. admin.akadns.net. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-akadns-net.
+
+a8-130.akadns.net    IN      NS      .
+a8-130.akadns.net    IN      NS      .
+a46-129.akadns.net    IN      NS      .
+a46-129.akadns.net    IN      NS      .
+a44-131.akadns.net    IN      NS      .
+a44-131.akadns.net    IN      NS      .
+a7-130.akagtm.org    IN      NS      .
+a3-129.akadns.net    IN      NS      .
+a3-129.akadns.net    IN      NS      .
+a42-130.akagtm.org    IN      NS      .
+a1-128.akadns.net    IN      NS      .
+a1-128.akadns.net    IN      NS      .
+a18-128.akagtm.org    IN      NS      .
+a28-129.akagtm.org    IN      NS      .
+mx0b-00190b01.pphosted.com    IN      MX      10 .
+mx0a-00190b01.pphosted.com    IN      MX      10 .
+mx0b-00190b01.pphosted.com    IN      MX      10 .
+mx0a-00190b01.pphosted.com    IN      MX      10 .
+akadns.net    IN      TXT     "'Thisisnotthenameserveryouarelookingfor.'"
+akadns.net    IN      TXT     "'v=spf1 -all'"

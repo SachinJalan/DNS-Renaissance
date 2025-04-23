@@ -1,0 +1,22 @@
+$TTL 86400
+tiktokcdn.com.    IN      SOA     auth-server-tiktokcdn-com. admin.tiktokcdn.com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-tiktokcdn-com.
+
+a6-65.akam.net    IN      NS      .
+a6-65.akam.net    IN      NS      .
+a1-97.akam.net    IN      NS      .
+a1-97.akam.net    IN      NS      .
+a9-66.akam.net    IN      NS      .
+a9-66.akam.net    IN      NS      .
+a18-64.akam.net    IN      NS      .
+a18-64.akam.net    IN      NS      .
+a13-67.akam.net    IN      NS      .
+a13-67.akam.net    IN      NS      .
+a12-66.akam.net    IN      NS      .
+a12-66.akam.net    IN      NS      .

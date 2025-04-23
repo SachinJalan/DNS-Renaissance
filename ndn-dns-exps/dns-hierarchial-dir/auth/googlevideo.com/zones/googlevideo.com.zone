@@ -1,0 +1,22 @@
+$TTL 86400
+googlevideo.com.    IN      SOA     auth-server-googlevideo-com. admin.googlevideo.com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-googlevideo-com.
+
+ns4.google.com    IN      NS      .
+ns4.google.com    IN      NS      .
+ns3.google.com    IN      NS      .
+ns3.google.com    IN      NS      .
+ns2.google.com    IN      NS      .
+ns2.google.com    IN      NS      .
+ns1.google.com    IN      NS      .
+ns1.google.com    IN      NS      .
+googlevideo.com    IN      A       142.250.207.228
+googlevideo.com    IN      AAAA    2404:6800:4002:82d::2004
+googlevideo.com    IN      TXT     "'v=spf1 ?all'"
+_dmarc.googlevideo.com    IN      TXT     "'v=DMARC1; p=none; rua=mailto:mailauth-reports@google.com'"

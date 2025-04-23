@@ -1,0 +1,18 @@
+$TTL 86400
+net.   IN      SOA     tld-server-net. admin.tld-server-net. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+        IN      NS      tld-server-net.
+
+fbcdn.net.    IN      NS      auth-server-fbcdn-net.
+fbcdn.net.    IN      A       192.168.0.100  ; Placeholder IP
+apple-dns.net.    IN      NS      auth-server-apple-dns-net.
+apple-dns.net.    IN      A       192.168.0.101  ; Placeholder IP
+whatsapp.net.    IN      NS      auth-server-whatsapp-net.
+whatsapp.net.    IN      A       192.168.0.102  ; Placeholder IP
+akadns.net.    IN      NS      auth-server-akadns-net.
+akadns.net.    IN      A       192.168.0.103  ; Placeholder IP

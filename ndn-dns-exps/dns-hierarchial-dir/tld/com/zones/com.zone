@@ -1,0 +1,32 @@
+$TTL 86400
+com.   IN      SOA     tld-server-com. admin.tld-server-com. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+        IN      NS      tld-server-com.
+
+google.com.    IN      NS      auth-server-google-com.
+google.com.    IN      A       192.168.0.100  ; Placeholder IP
+googleapis.com.    IN      NS      auth-server-googleapis-com.
+googleapis.com.    IN      A       192.168.0.101  ; Placeholder IP
+apple.com.    IN      NS      auth-server-apple-com.
+apple.com.    IN      A       192.168.0.102  ; Placeholder IP
+gstatic.com.    IN      NS      auth-server-gstatic-com.
+gstatic.com.    IN      A       192.168.0.103  ; Placeholder IP
+cloudflare.com.    IN      NS      auth-server-cloudflare-com.
+cloudflare.com.    IN      A       192.168.0.104  ; Placeholder IP
+facebook.com.    IN      NS      auth-server-facebook-com.
+facebook.com.    IN      A       192.168.0.105  ; Placeholder IP
+microsoft.com.    IN      NS      auth-server-microsoft-com.
+microsoft.com.    IN      A       192.168.0.106  ; Placeholder IP
+amazonaws.com.    IN      NS      auth-server-amazonaws-com.
+amazonaws.com.    IN      A       192.168.0.107  ; Placeholder IP
+googlevideo.com.    IN      NS      auth-server-googlevideo-com.
+googlevideo.com.    IN      A       192.168.0.108  ; Placeholder IP
+tiktokcdn.com.    IN      NS      auth-server-tiktokcdn-com.
+tiktokcdn.com.    IN      A       192.168.0.109  ; Placeholder IP
+youtube.com.    IN      NS      auth-server-youtube-com.
+youtube.com.    IN      A       192.168.0.110  ; Placeholder IP

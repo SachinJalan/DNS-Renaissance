@@ -1,0 +1,23 @@
+$TTL 86400
+fbcdn.net.    IN      SOA     auth-server-fbcdn-net. admin.fbcdn.net. (
+                        2023121001      ; serial
+                        3600            ; refresh
+                        1800            ; retry
+                        604800          ; expire
+                        86400           ; minimum TTL
+                        )
+                IN      NS      auth-server-fbcdn-net.
+
+a.ns.facebook.com    IN      NS      .
+a.ns.facebook.com    IN      NS      .
+c.ns.facebook.com    IN      NS      .
+c.ns.facebook.com    IN      NS      .
+d.ns.facebook.com    IN      NS      .
+d.ns.facebook.com    IN      NS      .
+b.ns.facebook.com    IN      NS      .
+b.ns.facebook.com    IN      NS      .
+fbcdn.net    IN      A       57.144.124.1
+fbcdn.net    IN      AAAA    2a03:2880:f33e:8:face:b00c:0:25de
+fbcdn.net    IN      TXT     "'v=spf1 a ~all'"
+fbcdn.net    IN      TXT     "'google-site-verification=fK7K3F-hT-Pre47WNaVLRyk-_nC0Kc7K-IzagA5gPEw'"
+_dmarc.fbcdn.net    IN      TXT     "'v=DMARC1; p=none; sp=none; rua=mailto:a@dmarc.facebookmail.com'"
